@@ -1922,7 +1922,7 @@ message.channel.send(`Here is your anime picture: ${anime}`);
 });
                                         
 
-client.login('NDQ2NzUwOTIzMjIyNDE3NDI4.Dd9kvg.itCh315_xE-EH9kfvLjvNJBHoeQ');
+client.login(process.env.BOT_TOKEN);
 
 
   
