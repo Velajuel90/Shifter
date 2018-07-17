@@ -484,6 +484,64 @@ let kill2 = answers[Math.floor(Math.random() * answers.length)];
 }
 });
 
+client.on('message', (message) => {
+  if (message.content.startsWith("Shifter_pat")) {
+    let messageArray = message.content.split(" ");
+  let args = messageArray.slice(1);
+   let kUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
+  
+  var answers = [
+	  'https://media.giphy.com/media/N0CIxcyPLputW/giphy.gif',
+	  'https://media1.tenor.com/images/1e92c03121c0bd6688d17eef8d275ea7/tenor.gif?itemid=9920853',
+	  'http://gifimage.net/wp-content/uploads/2018/04/pat-pat-gif-11.gif',
+	  'https://vignette.wikia.nocookie.net/adventuretimewithfinnandjake/images/2/2e/Jake_pat.gif/revision/latest?cb=20110822162728',
+	  'http://gifimage.net/wp-content/uploads/2018/04/pat-gif-5.gif',
+	  'https://media.giphy.com/media/ARSp9T7wwxNcs/giphy.gif',
+	  'https://i.pinimg.com/originals/2e/27/d5/2e27d5d124bc2a62ddeb5dc9e7a73dd8.gif',
+	  'https://thumbs.gfycat.com/FlimsyDeafeningGrassspider-size_restricted.gif',
+	  'https://i.imgur.com/So4WHpF.gif?noredirect',
+	  'https://media1.tenor.com/images/398c9c832335a13be124914c23e88fdf/tenor.gif?itemid=9939761',
+	  'http://gifimage.net/wp-content/uploads/2018/04/pat-gif-9.gif',
+	  'https://animatedit.files.wordpress.com/2017/01/omake-gif-anime-gate-episode-15-tuka-head-pat.gif',
+	  'https://i.imgur.com/LUypjw3.gif',
+	  'https://giffiles.alphacoders.com/248/2482.gif',
+	  'https://giant.gfycat.com/BlankGiftedBurro.gif',
+	  'https://cdn155.picsart.com/227838839007202.gif?r1024x1024',
+	  'https://i.kym-cdn.com/photos/images/newsfeed/000/962/743/76d.gif',
+	  'https://78.media.tumblr.com/b4d110b98079b935512467aad091f068/tumblr_myki5bzz0U1shdfeho1_500.gif',
+	  'http://24.media.tumblr.com/e6713de4cab8a28711835b6a339928b4/tumblr_mp0yr2VHQQ1rvdjx0o4_500.gif',
+	  'https://ci.memecdn.com/4408183.gif',
+	  'https://lh3.googleusercontent.com/-Nhv1fkZsmIg/VbFlxiHtIqI/AAAAAAAAAcg/z0Fe_7Wci2U/w480-h270/1372623291856.gif',
+	  'http://30.media.tumblr.com/bde29ae19fa160f0fc7bc8f0dcf5308b/tumblr_n7t4ioLycK1rbnx7io1_500.gif',
+	  'http://www.thebakingspoon.com/wp-content/uploads/2013/12/patt.gif',
+	  'https://media1.tenor.com/images/bf646b7164b76efe82502993ee530c78/tenor.gif?itemid=7394758',
+	  'https://i.pinimg.com/originals/a0/6d/65/a06d65ad49f019aaae3f30fb872df619.gif',
+	  'https://i.kym-cdn.com/photos/images/newsfeed/000/962/743/76d.gif',
+	  'https://i.makeagif.com/media/7-25-2014/yprfox.gif',
+	  'https://vignette.wikia.nocookie.net/date-a-live/images/4/49/Tumblr_n6gbzqv4VX1so56pco2_500.gif/revision/latest?cb=20150607053039',
+	  'https://hypixel.net/attachments/pat-pat-gif.836631/',
+	  'https://78.media.tumblr.com/1cebb497f0f43e09221b40c0903e29ae/tumblr_nuf0l7TWxe1uwzy53o1_500.gif',
+	  'https://archive-media-0.nyafuu.org/c/image/1483/55/1483553008493.gif',
+	  'http://gifimage.net/wp-content/uploads/2017/09/anime-pat-gif-3.gif',
+	  'https://media.tenor.com/images/f48ffb8cf033d1aefe4693045aedad5a/tenor.gif',
+	  'http://31.media.tumblr.com/da9a1ea1e8eab9b48647266277f1aa4c/tumblr_miurofstk31rhyx92o1_500.gif',
+	  'http://gifimage.net/wp-content/uploads/2017/07/head-pat-gif-10.gif',
+	  'https://media1.tenor.com/images/291ea37382e1d6cd33349c50a398b6b9/tenor.gif?itemid=10204936',
+	  'https://vignette.wikia.nocookie.net/loli8353/images/f/f3/Petting_Renge.gif/revision/latest?cb=20180301081056',
+	  'http://farm4.staticflickr.com/3776/9187590619_3cf831b4fa_o.gif',
+	  'https://memestatic.fjcdn.com/gifs/Headpat_17fcf6_6500559.gif',
+	  'https://uploads.disquscdn.com/images/635f054ddde01f87240a9a59148f873d3964a390fe519e5001ae16bdda72452e.gif',
+	  'https://lh3.googleusercontent.com/-FRlK4kmOtNg/WcnEBFjPumI/AAAAAAACJp8/aw1WFnE9e68GQL3uP_1e6cGLP4ya96zDQCJoC/w414-h304/d5e9260c-ecea-4d43-95a8-54e94c33bcd6.gif',
+	  'https://78.media.tumblr.com/1cebb497f0f43e09221b40c0903e29ae/tumblr_nuf0l7TWxe1uwzy53o1_500.gif',
+	  'https://67.media.tumblr.com/f4ad55e5000971774f9df8905eabf110/tumblr_oa7t1gUNOq1u21ng6o2_540.gif',
+	  
+  ];
+  
+let pat1 = answers[Math.floor(Math.random() * answers.length)];
+message.channel.send(`**${message.author} pats ${kUser}** ${pat1}`);
+  }
+});
+
 
 client.on('message', (message) => {
 	if (message.content.startsWith("Shifter_servers")) {
