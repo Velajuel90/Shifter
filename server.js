@@ -225,6 +225,7 @@ client.on('message', (message) => {
   .addField("Shifter_2dices", '2 dices roll')
   .addField("Shifter_win", 'Test if you can win from Shifter')
   .addField("Shifter_anime", 'Shows random anime pictures')
+  .addField("Shifter_pat @<user>", 'Pat an user. Do not use the <>. Example: Shifter_pat @user#0000')
   .addField("Shifter_meme", 'Shows random memes')
   .addField("Shifter_dutchmeme", 'Shows random memes in Dutch')
   .addField("Shifter_cat", 'Shows random cats')
@@ -235,9 +236,7 @@ client.on('message', (message) => {
   .addField("Shifter_lesbian", 'Test how much lesbian you are')
   .addField("Shifter_shoot @<user>", 'Shoot to someone. Do not use the <>. Example: Shifter_shoot @user#0000')
   .addField("Shifter_kill @<user>", 'Kill someone. Do not use the <>. Example: Shifter_kill @user#0000')
-  .addField("Shifter_uq", 'Get a useless question from Shifter')
-  .addField("Shifter_level", 'Check which level you are. NOTE: the command does not work because faults.')
-  .addField("Shifter_points", 'Check how much points you have. NOTE: the command does not work because faults.');
+  .addField("Shifter_uq", 'Get a useless question from Shifter');
     
   message.member.send(fun)
   }
