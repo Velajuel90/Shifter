@@ -202,6 +202,7 @@ client.on('message', (message) => {
   .addField("Shifter_ping", 'Checks if the bot responds')
   .addField("Shifter_servers", 'Display how many server the bot runs')
   .addField("Shifter_serverinfo", 'Displays info about your server')
+  .addField("Shifter_about", 'Gets info about the bot')
   .addField("Shifter_invite", 'Gets invite link for your server')
   .addField("Shifter_support", 'Link to support server')
   .addField("Shifter_vote", 'Vote for the bot')
