@@ -26,6 +26,21 @@ message.channel.send(ping);
 });
 
 client.on("message", (message) => {
+  if (message.content.startsWith("Shifter_about")) {
+    let about = new Discord.RichEmbed()
+    .setDescription("Shifter About")
+    .setColor("#bc0000")
+    .addField("Name", "Shifter")
+    .addField("Created by", "Velajuel#3927")
+    .addField("Created on", "Sunday, 16 june 2018")
+    .addField("Servers running", `${client.guilds.size}`)
+    .addField("Commands", "36");
+
+message.channel.send(about);
+  }
+});
+
+client.on("message", (message) => {
   if (message.content.startsWith("Shifter_vote")) {
     let vote = new Discord.RichEmbed()
     .setColor("#bc0000")
