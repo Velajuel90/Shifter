@@ -34,7 +34,7 @@ client.on("message", (message) => {
     .addField("Created by", "Velajuel#3927")
     .addField("Created on", "Sunday, June 16 2018")
     .addField("Servers running", `${client.guilds.size}`)
-    .addField("Commands", "36");
+    .addField("Commands", "37");
 
 message.channel.send(about);
   }
