@@ -12,7 +12,7 @@ leaderboard(args);
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.username}!`);
-      client.user.setActivity(`Shifter_help | Check Shifter_dutchmeme`);
+      client.user.setActivity(`Shifter_help | ${client.guilds.size} servers`);
 });
 
 client.on("message", (message) => {
