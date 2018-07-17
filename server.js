@@ -1931,7 +1931,7 @@ var answers = [
   'https://cdn.discordapp.com/attachments/440234179440148481/464155075565322240/tumblr_ot7lt3sqN31w3rqyeo4_400.png',
   'https://cdn.discordapp.com/attachments/440234179440148481/464155077116952577/render__super_sonico_valentine_by_xbunnygoth-d9zf2fj.png',
   'https://cdn.discordapp.com/attachments/440234179440148481/464155079608500224/f4cbc26914c041ca16f68184206b94c5--charlotte-anime-amnesia-anime.jpg',
-  'https://cdn.discordapp.com/attachments/440234179440148481/464155079654768641/e6rSsY8.jpg'.
+  'https://cdn.discordapp.com/attachments/440234179440148481/464155079654768641/e6rSsY8.jpg',
   'https://cdn.discordapp.com/attachments/440234179440148481/464155105651064832/32257441_1682941185129642_7281427222785687552_n.jpg',
   
   
