@@ -21,7 +21,7 @@ client.on("message", message => {
 
   if (!points[message.author.id]) points[message.author.id] = {
     points: 0,
-    level: 0
+    level: 1
   };
   let userData = points[message.author.id];
   userData.points++;
