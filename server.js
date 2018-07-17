@@ -1933,7 +1933,7 @@ var answers = [
   'https://cdn.discordapp.com/attachments/440234179440148481/464155079608500224/f4cbc26914c041ca16f68184206b94c5--charlotte-anime-amnesia-anime.jpg',
   'https://cdn.discordapp.com/attachments/440234179440148481/464155079654768641/e6rSsY8.jpg'.
   'https://cdn.discordapp.com/attachments/440234179440148481/464155105651064832/32257441_1682941185129642_7281427222785687552_n.jpg',
-  'https://cdn.discordapp.com/attachments/440234179440148481/464155147245977611/180_by_redhod2-dbld8mt.jpg',
+  
   
   ]
 
