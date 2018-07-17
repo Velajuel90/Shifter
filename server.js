@@ -12,7 +12,7 @@ leaderboard(args);
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.username}!`);
-      client.user.setActivity(`Shifter_help | New command: Shifter_pat`);
+      client.user.setActivity(`Shifter_help | New command: Shifter_pat | ${client.guilds.size} servers`);
 });
 	
 client.on("message", (message) => {
