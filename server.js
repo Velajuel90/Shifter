@@ -538,7 +538,8 @@ client.on('message', (message) => {
   ];
   
 let pat1 = answers[Math.floor(Math.random() * answers.length)];
-message.channel.send(`**${message.author} pats ${kUser}** ${pat1}`);
+message.channel.send(`**${message.author} pats ${kUser}**`);
+message.channel.send(`${pat1}`);
   }
 });
 
