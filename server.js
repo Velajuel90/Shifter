@@ -12,11 +12,11 @@ leaderboard(args);
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.username}!`);
-      client.user.setActivity(`Changing prefix.... Takes till around 2 pm GMT +0`);
+      client.user.setActivity(`S_help | ${client.guilds.size} servers`);
 });
 	
 client.on("message", (message) => {
-  if (message.content.startsWith("Shifter_ping")) {
+  if (message.content.startsWith("S_ping")) {
     let ping = new Discord.RichEmbed()
     .setColor("#bc0000")
     .addField("Shifter Ping", "Pong!");
@@ -26,7 +26,7 @@ message.channel.send(ping);
 });
 
 client.on("message", (message) => {
-  if (message.content.startsWith("Shifter_about")) {
+  if (message.content.startsWith("S_about")) {
     let about = new Discord.RichEmbed()
     .setDescription("Shifter About")
     .setColor("#bc0000")
@@ -34,6 +34,7 @@ client.on("message", (message) => {
     .addField("Created by", "Velajuel#3927")
     .addField("Created on", "Sunday, June 16 2018")
     .addField("Servers running", `${client.guilds.size}`)
+    .addField("Amount users", `${client.users.size}`)
     .addField("Commands", "37");
 
 message.channel.send(about);
@@ -41,7 +42,7 @@ message.channel.send(about);
 });
 
 client.on("message", (message) => {
-  if (message.content.startsWith("Shifter_vote")) {
+  if (message.content.startsWith("S_vote")) {
     let vote = new Discord.RichEmbed()
     .setColor("#bc0000")
     .addField("Shifter Vote", "Vote me here: https://discordbots.org/bot/446750923222417428/vote");
@@ -51,7 +52,7 @@ client.on("message", (message) => {
 });
 
 client.on("message", (message) => {
-	if (message.content.startsWith("Shifter_2purge")) {
+	if (message.content.startsWith("S_2purge")) {
       let messagecount = parseInt(2);
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
@@ -63,7 +64,7 @@ client.on("message", (message) => {
 });
 
 client.on("message", (message) => {
-	if (message.content.startsWith("Shifter_3purge")) {
+	if (message.content.startsWith("S_3purge")) {
       let messagecount = parseInt(3);
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
@@ -75,7 +76,7 @@ client.on("message", (message) => {
 });
 
 client.on("message", (message) => {
-	if (message.content.startsWith("Shifter_4purge")) {
+	if (message.content.startsWith("S_4purge")) {
       let messagecount = parseInt(4);
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
@@ -87,7 +88,7 @@ client.on("message", (message) => {
 });
 
 client.on("message", (message) => {
-	if (message.content.startsWith("Shifter_5purge")) {
+	if (message.content.startsWith("S_5purge")) {
       let messagecount = parseInt(5);
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
@@ -99,7 +100,7 @@ client.on("message", (message) => {
 });
 
 client.on("message", (message) => {
-	if (message.content.startsWith("Shifter_6purge")) {
+	if (message.content.startsWith("S_6purge")) {
       let messagecount = parseInt(6);
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
@@ -111,7 +112,7 @@ client.on("message", (message) => {
 });
 
 client.on("message", (message) => {
-	if (message.content.startsWith("Shifter_7purge")) {
+	if (message.content.startsWith("S_7purge")) {
       let messagecount = parseInt(7);
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
@@ -123,7 +124,7 @@ client.on("message", (message) => {
 });
 
 client.on("message", (message) => {
-	if (message.content.startsWith("Shifter_8purge")) {
+	if (message.content.startsWith("S_8purge")) {
       let messagecount = parseInt(8);
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
@@ -135,7 +136,7 @@ client.on("message", (message) => {
 });
 
 client.on("message", (message) => {
-	if (message.content.startsWith("Shifter_9purge")) {
+	if (message.content.startsWith("S_9purge")) {
       let messagecount = parseInt(9);
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
@@ -147,7 +148,7 @@ client.on("message", (message) => {
 });
 
 client.on("message", (message) => {
-	if (message.content.startsWith("Shifter_10purge")) {
+	if (message.content.startsWith("S_10purge")) {
       let messagecount = parseInt(10);
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
@@ -160,7 +161,7 @@ client.on("message", (message) => {
 
 client.on("message", (message) => {
 
-  if (message.content.startsWith("Shifter_kick")) {
+  if (message.content.startsWith("S_kick")) {
   if(message.author.bot) return;
   if(message.channel.type === "dm") return;
   let messageArray = message.content.split(" ");
@@ -192,58 +193,58 @@ client.on("message", (message) => {
 }); 
 
 client.on('message', (message) => {
-  if (message.content.startsWith("Shifter_help")) {
+  if (message.content.startsWith("S_help")) {
     message.channel.send(':white_check_mark: Check your dm with my commands!');
   let embed = new Discord.RichEmbed()
   .setDescription("Shifter Help v2.0")
   .setColor("#15f153")
-  .addField("Shifter_help", 'Gets help page')
-  .addField("Shifter_funhelp", 'Gets the help page for fun commands')
-  .addField("Shifter_ping", 'Checks if the bot responds')
-  .addField("Shifter_servers", 'Display how many server the bot runs')
-  .addField("Shifter_serverinfo", 'Displays info about your server')
-  .addField("Shifter_about", 'Gets info about the bot')
-  .addField("Shifter_invite", 'Gets invite link for your server')
-  .addField("Shifter_support", 'Link to support server')
-  .addField("Shifter_vote", 'Vote for the bot')
-  .addField("Shifter_<number>purge", 'Deletes some messages. Do not use the <>. You can choose between 2 and 10. Example: Shifter_4purge')
-  .addField("Shifter_kick <@user> <reason>", 'Kick a user. Do not use the <>. Example: Shifter_kick @user#0000 angry')
-  .addField("Shifter_ban <@user> <reason>", 'Ban a user. Do not use the <>. Example: Shifter_ban @user#0000 stupid')
+  .addField("S_help", 'Gets help page')
+  .addField("S_funhelp", 'Gets the help page for fun commands')
+  .addField("S_ping", 'Checks if the bot responds')
+  .addField("S_servers", 'Display how many server the bot runs')
+  .addField("S_serverinfo", 'Displays info about your server')
+  .addField("S_about", 'Gets info about the bot')
+  .addField("S_invite", 'Gets invite link for your server')
+  .addField("S_support", 'Link to support server')
+  .addField("S_vote", 'Vote for the bot')
+  .addField("S_<number>purge", 'Deletes some messages. Do not use the <>. You can choose between 2 and 10. Example: S_4purge')
+  .addField("S_kick <@user> <reason>", 'Kick a user. Do not use the <>. Example: S_kick @user#0000 angry')
+  .addField("S_ban <@user> <reason>", 'Ban a user. Do not use the <>. Example: S_ban @user#0000 stupid')
 
     message.member.send(embed);
   }
 });
 
 client.on('message', (message) => {
-  if (message.content.startsWith("Shifter_funhelp")) {
+  if (message.content.startsWith("S_funhelp")) {
     message.channel.send(':white_check_mark: Check your dm with my fun commands!');
     let fun = new Discord.RichEmbed()
     .setDescription("Shifter Fun Help v1.1")
     .setColor("#15f153")
-    .addField("Shifter_avatar", 'Get your avatar')
-  .addField("Shifter_dice", 'Dice roll')
-  .addField("Shifter_2dices", '2 dices roll')
-  .addField("Shifter_win", 'Test if you can win from Shifter')
-  .addField("Shifter_anime", 'Shows random anime pictures')
-  .addField("Shifter_pat @<user>", 'Pat an user. Do not use the <>. Example: Shifter_pat @user#0000')
-  .addField("Shifter_meme", 'Shows random memes')
-  .addField("Shifter_dutchmeme", 'Shows random memes in Dutch')
-  .addField("Shifter_cat", 'Shows random cats')
-  .addField("Shifter_lottery", 'A lottery. Earn money or lose')
-  .addField("Shifter_ask <your question>", 'Ask shifter a YES or NO question. Do not use the <>')
-  .addField("Shifter_card <your card>", 'Play a card game with Shifter. Do not use the <>. Example: Shifter_card Hearts 5')
-  .addField("Shifter_gay", 'Test how much gay you are')
-  .addField("Shifter_lesbian", 'Test how much lesbian you are')
-  .addField("Shifter_shoot @<user>", 'Shoot to someone. Do not use the <>. Example: Shifter_shoot @user#0000')
-  .addField("Shifter_kill @<user>", 'Kill someone. Do not use the <>. Example: Shifter_kill @user#0000')
-  .addField("Shifter_uq", 'Get a useless question from Shifter');
+    .addField("S_avatar", 'Get your avatar')
+  .addField("S_dice", 'Dice roll')
+  .addField("S_2dices", '2 dices roll')
+  .addField("S_win", 'Test if you can win from Shifter')
+  .addField("S_anime", 'Shows random anime pictures')
+  .addField("S_pat @<user>", 'Pat an user. Do not use the <>. Example: S_pat @user#0000')
+  .addField("S_meme", 'Shows random memes')
+  .addField("S_dutchmeme", 'Shows random memes in Dutch')
+  .addField("S_cat", 'Shows random cats')
+  .addField("S_lottery", 'A lottery. Earn money or lose')
+  .addField("S_ask <your question>", 'Ask shifter a YES or NO question. Do not use the <>')
+  .addField("S_card <your card>", 'Play a card game with Shifter. Do not use the <>. Example: S_card Hearts 5')
+  .addField("S_gay", 'Test how much gay you are')
+  .addField("S_lesbian", 'Test how much lesbian you are')
+  .addField("S_shoot @<user>", 'Shoot to someone. Do not use the <>. Example: S_shoot @user#0000')
+  .addField("S_kill @<user>", 'Kill someone. Do not use the <>. Example: S_kill @user#0000')
+  .addField("S_uq", 'Get a useless question from Shifter');
     
   message.member.send(fun)
   }
 });
 
 client.on("message", (message) => {
-  if (message.content.startsWith("Shifter_ban")) {
+  if (message.content.startsWith("S_ban")) {
   let messageArray = message.content.split(" ");
   let cmd = messageArray[0];
   let args = messageArray.slice(1);
@@ -276,7 +277,7 @@ client.on("message", (message) => {
 });
 
 client.on('message', (message) => {
-  if (message.content.startsWith("Shifter_shoot")) {
+  if (message.content.startsWith("S_shoot")) {
     let messageArray = message.content.split(" ");
   let args = messageArray.slice(1);
    let kUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
@@ -289,7 +290,7 @@ client.on('message', (message) => {
 });
 
 client.on("message", function(message) {
-    if (message.content == "Shifter_win") {
+    if (message.content == "S_win") {
       
 var answers = [ 
 
@@ -311,7 +312,7 @@ message.channel.send(win2);
 });
 
 client.on("message", function(message) {
-    if (message.content == "Shifter_uq") {
+    if (message.content == "S_uq") {
       
 var answers = [ 
 
@@ -398,7 +399,7 @@ message.channel.send(win2);
     }
 });
 client.on('message', (message) => {
-  if (message.content.startsWith("Shifter_kill")) {
+  if (message.content.startsWith("S_kill")) {
     let messageArray = message.content.split(" ");
   let args = messageArray.slice(1);
    let kUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
@@ -484,7 +485,7 @@ let kill2 = answers[Math.floor(Math.random() * answers.length)];
 });
 
 client.on('message', (message) => {
-  if (message.content.startsWith("Shifter_pat")) {
+  if (message.content.startsWith("S_pat")) {
     let messageArray = message.content.split(" ");
   let args = messageArray.slice(1);
    let kUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
@@ -544,7 +545,7 @@ message.channel.send(`${pat1}`);
 
 
 client.on('message', (message) => {
-	if (message.content.startsWith("Shifter_servers")) {
+	if (message.content.startsWith("S_servers")) {
     let servers = new Discord.RichEmbed()
     .setColor("#bc0000")
     .addField("Shifter Servers", `**${client.guilds.size}**` + ' server(s) I am running ');
@@ -554,7 +555,7 @@ client.on('message', (message) => {
 });
 
 client.on('message', (message) => {
-	if (message.content.startsWith("Shifter_invite")) {
+	if (message.content.startsWith("S_invite")) {
     let invite = new Discord.RichEmbed()
     .setColor("#bc0000")
     .addField("Shifter Invite", "Invite me here: https://discordapp.com/oauth2/authorize?&client_id=446750923222417428&scope=bot&permissions=0");
@@ -564,7 +565,7 @@ client.on('message', (message) => {
 });
 
 client.on('message', (message) => {
-	if (message.content.startsWith("Shifter_support")) {
+	if (message.content.startsWith("S_support")) {
     let support = new Discord.RichEmbed()
     .setColor("#bc0000")
     .addField("Shifter Support", "https://discord.gg/6rzUtyf");
@@ -574,7 +575,7 @@ client.on('message', (message) => {
 });
 
 client.on('message', (message) => {
-	if (message.content.startsWith("Shifter_avatar")) {
+	if (message.content.startsWith("S_avatar")) {
      message.channel.send(message.author.avatarURL);
   }
 });
@@ -596,7 +597,7 @@ client.on('message', (message) => {
 });
 
 client.on("message", function(message) {
-    if (message.content == "Shifter_dice") {
+    if (message.content == "S_dice") {
 
 var answers = [ 
 
@@ -626,7 +627,7 @@ message.channel.send(diceroll);
 });
 
 client.on('message', (message) => {
-	if (message.content.startsWith("Shifter_ask")) {
+	if (message.content.startsWith("S_ask")) {
 
 var answers = [ 
 
@@ -649,7 +650,7 @@ message.channel.send(ask);
 });
 
 client.on('message', (message) => {
-	if (message.content.startsWith("Shifter_card")) {
+	if (message.content.startsWith("S_card")) {
 
 var answers = [ 
 
@@ -773,7 +774,7 @@ message.channel.send(cardgame);
 });
 
 client.on("message", function(message) {
-    if (message.content == "Shifter_2dices") {
+    if (message.content == "S_2dices") {
 
 var answers = [  
 
@@ -813,7 +814,7 @@ message.channel.send(diceroll2);
 });
 
 client.on("message", function(message) {
-    if (message.content == "Shifter_gay") {
+    if (message.content == "S_gay") {
 
 var answers = [ 
 
@@ -1032,7 +1033,7 @@ message.channel.send(gayresult);
 });
 
 client.on("message", function(message) {
-    if (message.content == "Shifter_lesbian") {
+    if (message.content == "S_lesbian") {
 
 var answers = [ 
 
@@ -1251,7 +1252,7 @@ message.channel.send(lesbianresult);
 });
 
 client.on("message", function(message) {
-    if (message.content == "Shifter_lottery") {
+    if (message.content == "S_lottery") {
 
 var answers = [ 
 
@@ -1655,7 +1656,7 @@ message.channel.send(lottery);
 });
 
 client.on("message", function(message) {
-    if (message.content == "Shifter_dutchmeme") {
+    if (message.content == "S_dutchmeme") {
 
 var answers = [ 
 
@@ -1751,7 +1752,7 @@ message.channel.send(`Here is your meme from the Netherlands! ${dutch}`);
 });
 
 client.on("message", function(message) {
-    if (message.content == "Shifter_meme") {
+    if (message.content == "S_meme") {
 
 var answers = [ 
 'https://pixel.nymag.com/imgs/daily/selectall/2016/08/10/wholesome_00.nocrop.w710.h2147483647.jpg',
@@ -1839,7 +1840,7 @@ message.channel.send(`Here is your meme! ${meme}`);
 });
 
 client.on("message", function(message) {
-    if (message.content == "Shifter_cat") {
+    if (message.content == "S_cat") {
 
 var answers = [ 
 'http://www.catster.com/wp-content/uploads/2017/08/A-fluffy-cat-looking-funny-surprised-or-concerned.jpg',
@@ -1908,7 +1909,7 @@ message.channel.send(`Here is your cat! ${cat}`);
 });
 
 client.on("message", function(message) {
-    if (message.content == "Shifter_anime") {
+    if (message.content == "S_anime") {
 
 var answers = [ 
   'https://cdn.discordapp.com/attachments/440234179440148481/459032249048760330/unknown.png',
