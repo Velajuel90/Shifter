@@ -9,39 +9,6 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.username}!`);
       client.user.setActivity(`S_help | ${client.guilds.size} servers`);
 });
-
-client.on("message", message => {
-  if (!message.author.send(message.content)) return;
-  if (message.author.bot) return;
-
-  if (!points[message.author.id]) points[message.author.id] = {
-    points: 0,
-    level: 0
-  };
-  let userData = points[message.author.id];
-  userData.points++;
-
-  let curLevel = Math.floor(0.5 * Math.sqrt(userData.points));
-  if (curLevel > userData.level) {
-    // Level up!
-    userData.level = curLevel;
-    let level = new Discord.RichEmbed()
-    .setColor("#bc0000")
-    .addField("Shifter levelup!", `You've leveled up to level **${curLevel}**!`);
-    message.channel.send(level);
-  }
-
-  if (message.content.startsWith(prefix + "level")) {
-    let levelcheck = new Discord.RichEmbed()
-    .setColor("#bc0000")
-    .addField("Shifter levelcheck", `You are currently level ${userData.level}, with ${userData.points} points.`);
-    message.channel.send(levelcheck);
-  }
-  fs.writeFile("./points.json", JSON.stringify(points), (err) => {
-    if (err) console.error(err)
-  });
-
-});
 	
 client.on("message", (message) => {
   if (message.content.startsWith("S_ping")) {
