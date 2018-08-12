@@ -12,7 +12,7 @@ leaderboard(args);
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.username}!`);
-      client.user.setActivity(`Shifter_help | ${client.users.size} users`);
+      client.user.setActivity(`Changing prefix.... Takes till around 2 pm GMT +0`);
 });
 	
 client.on("message", (message) => {
