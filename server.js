@@ -7,7 +7,7 @@ express(args);
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.username}!`);
-      client.user.setActivity(`S_help | ${client.guilds.size} servers`);
+      client.user.setActivity(`S_help | ${client.users.size} users`);
 });
 	
 client.on("message", (message) => {
