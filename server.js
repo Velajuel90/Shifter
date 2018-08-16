@@ -21,6 +21,16 @@ message.channel.send(ping);
 });
 
 client.on("message", (message) => {
+  if (message.content.startsWith("goedemorgen")) {
+    let ping = new Discord.RichEmbed()
+    .setColor("#bc0000")
+    .addField("Shifter Ping", "Goedemorgen @${message.author}");
+
+message.channel.send(ping);
+  }
+});
+
+client.on("message", (message) => {
   if (message.content.startsWith("S_about")) {
     let about = new Discord.RichEmbed()
     .setDescription("Shifter About")
