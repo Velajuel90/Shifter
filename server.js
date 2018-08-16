@@ -584,7 +584,7 @@ client.on('message', (message) => {
 	if (message.content.startsWith("S_invite")) {
     let invite = new Discord.RichEmbed()
     .setColor("#bc0000")
-    .addField("Shifter Invite", "Invite me here: https://discordapp.com/oauth2/authorize?&client_id=446750923222417428&scope=bot&permissions=0");
+    .addField("Shifter Invite", "Invite me here: https://discordapp.com/oauth2/authorize?&client_id=446750923222417428&scope=bot&permissions=8");
     
     message.channel.send(invite);
 	}
