@@ -316,6 +316,7 @@ client.on('message', (message) => {
   .addField("S_kick <@user> <reason>", 'Kick an user. Do not use the <>. Example: S_kick @user#0000 angry')
   .addField("S_ban <@user> <reason>", 'Ban an user. Do not use the <>. Example: S_ban @user#0000 stupid')
   .addField("S_warn <@user> <reason>", 'Warn an user. Do not use the <>. Example: S_warn @user#0000 rude to people')
+  .addField("Shifter Good Morning", 'Shifter says good morning to you when you type Goedemorgen, Morning, Good morning. It supports only Dutch and English now. Later more languages!')
 
     message.member.send(embed);
   }
