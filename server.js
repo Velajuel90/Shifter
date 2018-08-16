@@ -61,26 +61,6 @@ message.channel.send(ping);
 });
 
 client.on("message", (message) => {
-  if (message.content.startsWith("Morge")) {
-    let ping = new Discord.RichEmbed()
-    .setColor("#bc0000")
-    .addField("Shifter Good Morning", `Goedemorgen ${message.author}`);
-
-message.channel.send(ping);
-  }
-});
-
-client.on("message", (message) => {
-  if (message.content.startsWith("morge")) {
-    let ping = new Discord.RichEmbed()
-    .setColor("#bc0000")
-    .addField("Shifter Good Morning", `Goedemorgen ${message.author}`);
-
-message.channel.send(ping);
-  }
-});
-
-client.on("message", (message) => {
   if (message.content.startsWith("Good morning")) {
     let ping = new Discord.RichEmbed()
     .setColor("#bc0000")
