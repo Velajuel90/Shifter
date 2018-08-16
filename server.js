@@ -24,7 +24,7 @@ client.on("message", (message) => {
   if (message.content.startsWith("goedemorgen")) {
     let ping = new Discord.RichEmbed()
     .setColor("#bc0000")
-    .addField("Shifter Ping", "Goedemorgen @${message.author}");
+    .addField("Shifter Ping", "Goedemorgen @${message.author.id}");
 
 message.channel.send(ping);
   }
