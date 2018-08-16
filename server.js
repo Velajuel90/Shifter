@@ -233,8 +233,9 @@ client.on('message', (message) => {
   .addField("S_support", 'Link to support server')
   .addField("S_vote", 'Vote for the bot')
   .addField("S_<number>purge", 'Deletes some messages. Do not use the <>. You can choose between 2 and 10. Example: S_4purge')
-  .addField("S_kick <@user> <reason>", 'Kick a user. Do not use the <>. Example: S_kick @user#0000 angry')
-  .addField("S_ban <@user> <reason>", 'Ban a user. Do not use the <>. Example: S_ban @user#0000 stupid')
+  .addField("S_kick <@user> <reason>", 'Kick an user. Do not use the <>. Example: S_kick @user#0000 angry')
+  .addField("S_ban <@user> <reason>", 'Ban an user. Do not use the <>. Example: S_ban @user#0000 stupid')
+  .addField("S_warn <@user> <reason>", 'Warn an user. Do not use the <>. Example: S_warn @user#0000 rude to people')
 
     message.member.send(embed);
   }
