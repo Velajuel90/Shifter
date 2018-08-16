@@ -187,6 +187,36 @@ client.on("message", (message) => {
   }
 }); 
 
+client.on("message", (message) => {
+
+  if (message.content.startsWith("S_warn")) {
+  if(message.author.bot) return;
+  if(message.channel.type === "dm") return;
+  let messageArray = message.content.split(" ");
+  let cmd = messageArray[0];
+  let args = messageArray.slice(1);
+    let kUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
+    if(!kUser) return message.channel.send(":x: Can't find user! Please check it and try again.");
+    let kReason = args.join(" ").slice(22);
+    if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send(":x: That person can't be warned! Reason: You do not have the permission MANAGE_MEMBERS. Ask your owner for the permission.");
+
+    let warned = new Discord.RichEmbed()
+    .setDescription("Shifter Warn")
+    .setColor("#ff0000")
+    .addField("Warned User", `${kUser} with ID ${kUser.id}`)
+    .addField("Warned By", `<@${message.author.id}> with ID ${message.author.id}`)
+    .addField("Warned In", message.channel)
+    .addField("Time", message.createdAt)
+    .addField("Reason", kReason);
+
+    message.channel.send(":white_check_mark: The user got a warning in dm. I send also a copy of the warning here");
+    message.channel.send(warned);
+    kUser.send(warned);
+
+    return;
+  }
+}); 
+
 client.on('message', (message) => {
   if (message.content.startsWith("S_help")) {
     message.channel.send(':white_check_mark: Check your dm with my commands!');
