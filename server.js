@@ -106,7 +106,7 @@ client.on("message", (message) => {
     .setDescription("Shifter About")
     .setColor("#bc0000")
     .addField("Name", "Shifter")
-    .addField("Created by", "Velajuel#3927")
+    .addField("Created by", "Fermion#3927")
     .addField("Created on", "Sunday, June 16 2018")
     .addField("Servers running", `${client.guilds.size}`)
     .addField("Amount users", `${client.users.size}`)
