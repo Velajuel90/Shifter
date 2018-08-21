@@ -2111,7 +2111,7 @@ message.channel.send(`Here is your anime picture: ${anime}`);
 });
 
 client.on("message", function(message) {
-    if (message.content == "@Shifter") {
+    if (message.content == "@Shifter#1645") {
 
 var answers = [ 
          'https://cdn.discordapp.com/attachments/475015228304785434/481508483305308171/who_pinged_me.gif',                               
