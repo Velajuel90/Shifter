@@ -2109,8 +2109,20 @@ message.channel.send(`Here is your anime picture: ${anime}`);
 }
 
 });
-                                        
 
+client.on("message", function(message) {
+    if (message.content == "@Shifter") {
+
+var answers = [ 
+         'https://cdn.discordapp.com/attachments/475015228304785434/481508483305308171/who_pinged_me.gif',                               
+  ]
+
+let pingedme = answers[Math.floor(Math.random() * answers.length)];
+message.channel.send(`Here is your anime picture: ${pinged me}`);
+
+}
+
+});
 client.login(process.env.BOT_TOKEN);
 
 
