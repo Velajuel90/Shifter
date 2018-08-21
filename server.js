@@ -2136,6 +2136,33 @@ message.channel.send(`${pingedme}`);
 }
 
 });
+
+client.on("message", function(message) {
+    if (message.content == "@here") {
+
+var answers = [ 
+         'https://cdn.discordapp.com/attachments/475015228304785434/481508483305308171/who_pinged_me.gif',  
+	'https://cdn.discordapp.com/attachments/440232478242897933/481508732455354373/everyone.gif',
+	'WHO PINGED?! WHY DID YOU FUCKING PING ME?!',
+	'https://i.kym-cdn.com/photos/images/original/001/336/892/79a.png',
+	'https://pixteller.com/assets/storage/designs_images/2018-01-14/05/discord-pings-meme-1-5a5aef502eac5.png',
+	'https://i.ytimg.com/vi/keCDsD_GvAQ/maxresdefault.jpg',
+	'I AM A BOT. WHY DID YOU PING ME?',
+	'https://i.kym-cdn.com/photos/images/newsfeed/001/352/202/d9d.gif',
+	'https://i.redd.it/3jhbi9w57fw01.gif',
+	'https://derpicdn.net/img/2018/3/31/1695073/full.gif',
+	'I got a ping. Something interesting?',
+	'Do not ping me!',
+	'WHO PINGED ME? WHY DID YOU DO THIS TO EVERYONE?',
+	
+  ]
+
+let pingedme = answers[Math.floor(Math.random() * answers.length)];
+message.channel.send(`${pingedme}`);
+
+}
+
+});
 client.login(process.env.BOT_TOKEN);
 
 
