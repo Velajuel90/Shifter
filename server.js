@@ -2114,11 +2114,24 @@ client.on("message", function(message) {
     if (message.content == "@everyone") {
 
 var answers = [ 
-         'https://cdn.discordapp.com/attachments/475015228304785434/481508483305308171/who_pinged_me.gif',                               
+         'https://cdn.discordapp.com/attachments/475015228304785434/481508483305308171/who_pinged_me.gif. WHO PINGED ME?!',  
+	'https://cdn.discordapp.com/attachments/440232478242897933/481508732455354373/everyone.gif. And I thought I got an usefull message...',
+	'WHO PINGED?! WHY DID YOU FUCKING PING ME?!',
+	'https://i.kym-cdn.com/photos/images/original/001/336/892/79a.png. HAAAAAAAAAAAAAAAAAAAAAAA.',
+	'https://pixteller.com/assets/storage/designs_images/2018-01-14/05/discord-pings-meme-1-5a5aef502eac5.png. Just why?',
+	'https://i.ytimg.com/vi/keCDsD_GvAQ/maxresdefault.jpg. I do not want a ping!',
+	'I AM A BOT. WHY DID YOU PING ME?',
+	'https://i.kym-cdn.com/photos/images/newsfeed/001/352/202/d9d.gif. The ping is not for me.',
+	'https://i.redd.it/3jhbi9w57fw01.gif. THE PING TRIGGERS ME!',
+	'https://derpicdn.net/img/2018/3/31/1695073/full.gif. FUCK THE PING!',
+	'I got a ping. Something interesting?',
+	'Do not ping me!',
+	'WHO PINGED ME? WHY DID YOU DO THIS TO EVERYONE?',
+	
   ]
 
 let pingedme = answers[Math.floor(Math.random() * answers.length)];
-message.channel.send(`${pingedme} WHO PINGED ME?!`);
+message.channel.send(`${pingedme}`);
 
 }
 
