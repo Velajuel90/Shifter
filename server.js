@@ -2118,7 +2118,7 @@ var answers = [
   ]
 
 let pingedme = answers[Math.floor(Math.random() * answers.length)];
-message.channel.send(`Here is your anime picture: ${pingedme}`);
+message.channel.send(`WHO PINGED ME?!${pingedme}`);
 
 }
 
