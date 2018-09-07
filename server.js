@@ -923,6 +923,9 @@ message.channel.send(diceroll2);
 
 client.on("message", function(message) {
     if (message.content == "S_gay") {
+let messageArray = message.content.split(" ");
+  let args = messageArray.slice(1);
+   let taguser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
 
 var answers = [ 
 
@@ -1132,7 +1135,7 @@ var answers = [
 let gay = answers[Math.floor(Math.random() * answers.length)];
       let gayresult = new Discord.RichEmbed()
     .setColor("#f21890")
-    .addField("Shifter Gay", `:gay_pride_flag: You are ${gay}% gay`);
+    .addField("Shifter Gay", `:gay_pride_flag: ${taguser} is ${gay}% gay`);
 
 message.channel.send(gayresult);
 
