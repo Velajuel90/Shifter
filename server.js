@@ -923,220 +923,219 @@ message.channel.send(diceroll2);
 
 client.on("message", function(message) {
     if (message.content == "S_gay") {
-
-
-var answers = [ 
-
-  '1', 
-
-  '2',
-
-  '3',
-  
-  '4',
-  
-  '5',
-  
-  '6',
-  
-  '7',
-  
-  '8',
-  
-  '9',
-  
-  '10',
-  
-  '11',
-  
-  '12',
-  
-  '13',
-  
-  '14',
-  
-  '15',
-  
-  '16',
-  
-  '17',
-  
-  '18',
-  
-  '19',
-  
-  '20',
-  
-  '21',
-  
-  '22',
-  
-  '23',
-  
-  '24',
-  
-  '25',
-  
-  '26',
-  
-  '27',
-  
-  '28',
-  
-  '29',
-  
-  '30',
-  
-  '31',
-  
-  '32',
-  
-  '33',
-  
-  '34',
-  
-  '35',
-  
-  '36',
-  
-  '37',
-  
-  '38',
-  
-  '39',
-  
-  '40',
-  
-  '41',
-  
-  '42',
-  
-  '43',
-  
-  '44',
-  
-  '45',
-  
-  '46',
-  
-  '47',
-  
-  '48',
-  
-  '49',
-  
-  '50',
-  
-  '51',
-  
-  '52',
-  
-  '53',
-  
-  '54',
-  
-  '55',
-  
-  '56',
-  
-  '57',
-  
-  '58',
-  
-  '59',
-  
-  '60',
-  
-  '61',
-  
-  '62',
-  
-  '63',
-  
-  '64',
-  
-  '65',
-  
-  '66',
-  
-  '67',
-  
-  '68',
-  
-  '69',
-  
-  '70',
-  
-  '71',
-  
-  '72',
-  
-  '73',
-  
-  '74',
-  
-  '75',
-  
-  '76',
-  
-  '77',
-  
-  '78',
-  
-  '79',
-  
-  '80',
-  
-  '81',
-  
-  '82',
-  
-  '83',
-  
-  '84',
-  
-  '85',
-  
-  '86',
-  
-  '87',
-  
-  '88',
-  
-  '89',
-  
-  '90',
-  
-  '91',
-  
-  '92',
-  
-  '93',
-  
-  '94',
-  
-  '95',
-  
-  '96',
-  
-  '97',
-  
-  '98',
-  
-  '99',
-  
-  '100',
-  
-  '200',
-];
-
-let gay = answers[Math.floor(Math.random() * answers.length)];
 let messageArray = message.content.split(" ");
   let args = messageArray.slice(1);
    let taguser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
+
+var answers = [ 
+
+  `${taguser} is 1`, 
+
+  `${taguser} is 2`,
+
+  `${taguser} is 3`,
+  
+  `${taguser} is 4`,
+  
+  `${taguser} is 5`,
+  
+  `${taguser} is 6`,
+  
+  `${taguser} is 7`,
+  
+  `${taguser} is 8`,
+  
+  `${taguser} is 9`,
+  
+  `${taguser} is 10`,
+  
+  `${taguser} is 11`,
+  
+  `${taguser} is 12`,
+  
+  `${taguser} is 13`,
+  
+  `${taguser} is 14`,
+  
+  `${taguser} is 15`,
+  
+  `${taguser} is 16`,
+  
+  `${taguser} is 17`,
+  
+  `${taguser} is 18`,
+  
+  `${taguser} is 19`,
+  
+  `${taguser} is 20`,
+  
+  `${taguser} is 21`,
+  
+  `${taguser} is 22`,
+  
+  `${taguser} is 23`,
+  
+  `${taguser} is 24`,
+  
+  `${taguser} is 25`,
+  
+  `${taguser} is 26`,
+  
+  `${taguser} is 27`,
+  
+  `${taguser} is 28`,
+  
+  `${taguser} is 29`,
+  
+  `${taguser} is 30`,
+  
+  `${taguser} is 31`,
+  
+  `${taguser} is 32`,
+  
+  `${taguser} is 33`,
+  
+  `${taguser} is 34`,
+  
+  `${taguser} is 35`,
+  
+  `${taguser} is 36`,
+  
+  `${taguser} is 37`,
+  
+  `${taguser} is 38`,
+  
+  `${taguser} is 39`,
+  
+  `${taguser} is 40`,
+  
+  `${taguser} is 41`,
+  
+  `${taguser} is 42`,
+  
+  `${taguser} is 43`,
+  
+  `${taguser} is 44`,
+  
+  `${taguser} is 45`,
+  
+  `${taguser} is 46`,
+  
+  `${taguser} is 47`,
+  
+  `${taguser} is 48`,
+  
+  `${taguser} is 49`,
+  
+  `${taguser} is 50`,
+  
+  `${taguser} is 51`,
+  
+  `${taguser} is 52`,
+  
+  `${taguser} is 53`,
+  
+  `${taguser} is 54`,
+  
+  `${taguser} is 55`,
+  
+  `${taguser} is 56`,
+  
+  `${taguser} is 57`,
+  
+  `${taguser} is 58`,
+  
+  `${taguser} is 59`,
+  
+  `${taguser} is 60`,
+  
+  `${taguser} is 61`,
+  
+  `${taguser} is 62`,
+  
+  `${taguser} is 63`,
+  
+  `${taguser} is 64`,
+  
+  `${taguser} is 65`,
+  
+  `${taguser} is 66`,
+  
+  `${taguser} is 67`,
+  
+  `${taguser} is 68`,
+  
+  `${taguser} is 69`,
+  
+  `${taguser} is 70`,
+  
+  `${taguser} is 71`,
+  
+  `${taguser} is 72`,
+  
+  `${taguser} is 73`,
+  
+  `${taguser} is 74`,
+  
+  `${taguser} is 75`,
+  
+  `${taguser} is 76`,
+  
+  `${taguser} is 77`,
+  
+  `${taguser} is 78`,
+  
+  `${taguser} is 79`,
+  
+  `${taguser} is 80`,
+  
+  `${taguser} is 81`,
+  
+  `${taguser} is 82`,
+  
+  `${taguser} is 83`,
+  
+  `${taguser} is 84`,
+  
+  `${taguser} is 85`,
+  
+  `${taguser} is 86`,
+  
+  `${taguser} is 87`,
+  
+  `${taguser} is 88`,
+  
+  `${taguser} is 89`,
+  
+  `${taguser} is 90`,
+  
+  `${taguser} is 91`,
+  
+  `${taguser} is 92`,
+  
+  `${taguser} is 93`,
+  
+  `${taguser} is 94`,
+  
+  `${taguser} is 95`,
+  
+  `${taguser} is 96`,
+  
+  `${taguser} is 97`,
+  
+  `${taguser} is 98`,
+  
+  `${taguser} is 99`,
+  
+  `${taguser} is 100`,
+  
+  `${taguser} is 200`,
+];
+
+let gay = answers[Math.floor(Math.random() * answers.length)];
       let gayresult = new Discord.RichEmbed()
     .setColor("#f21890")
-    .addField("Shifter Gay", `:gay_pride_flag: ${taguser} is ${gay}% gay`);
+    .addField("Shifter Gay", `:gay_pride_flag: ${gay}% gay`);
 
 message.channel.send(gayresult);
 
