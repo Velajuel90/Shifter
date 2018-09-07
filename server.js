@@ -7,8 +7,7 @@ express(args);
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.username}!`);
-      client.user.setStatus('dnd');
-      client.user.setActivity(`Please wait while Shifter configures his commands. This can take a while`);
+      client.user.setActivity(`S_help | ${client.guilds.size} servers`);
 });
 	
 client.on("message", (message) => {
