@@ -688,7 +688,7 @@ client.on('message', (message) => {
 });
 
 client.on('message', (message) => {
-  if (message.content.startsWith("Shifter_serverinfo")) {
+  if (message.content.startsWith("S_serverinfo")) {
    let sicon = message.guild.iconURL;
     let serverembed = new Discord.RichEmbed()
     .setDescription("Server Information")
@@ -1852,7 +1852,21 @@ var answers = [
   'https://cdn.discordapp.com/attachments/440234197093842985/486856678763921409/FB_IMG_1536146070287.jpg',
   'https://cdn.discordapp.com/attachments/440234197093842985/486497555065077760/FB_IMG_1536060442837.jpg',
   'https://cdn.discordapp.com/attachments/440234197093842985/486283693963608096/FB_IMG_1536009441295.jpg',
-
+  'https://scontent-amt2-1.xx.fbcdn.net/v/t1.0-9/40858884_1942847482469667_5385030416631595008_n.jpg?_nc_cat=0&oh=f7f8d30fbde9fd4a7163eaa91c801f7e&oe=5C2CB826',
+  'https://scontent-amt2-1.xx.fbcdn.net/v/t1.0-9/40814233_1944326908988391_7470282067276726272_n.jpg?_nc_cat=0&oh=d60809ad53c5daab255272b7b846cd82&oe=5C29FDE3',
+  'https://scontent-amt2-1.xx.fbcdn.net/v/t1.0-9/40536710_1940293379391744_443696922272727040_n.jpg?_nc_cat=0&oh=52fef5df3f0f1dee711edfcf3b3ed10f&oe=5C37E7AB',
+  'https://scontent-amt2-1.xx.fbcdn.net/v/t1.0-9/40541179_1940527639368318_2158258295016521728_n.jpg?_nc_cat=0&oh=3e755b9a2e894b9c5c3eff1bcb072265&oe=5C3BCB27',
+  'https://scontent-amt2-1.xx.fbcdn.net/v/t1.0-9/40606123_1941571295930619_4822567873278902272_n.jpg?_nc_cat=0&oh=733ab7a0dcb33d9b009f6d5b5df7156e&oe=5C1F6DCC',
+  'https://scontent-amt2-1.xx.fbcdn.net/v/t1.0-9/40628576_1941642605923488_938919390374526976_n.jpg?_nc_cat=0&oh=0cb95a8b0234da1010037c9ce2cf05d7&oe=5BF507CE',
+  'https://scontent-amt2-1.xx.fbcdn.net/v/t1.0-9/40771239_1943840322370383_2751536064781877248_n.jpg?_nc_cat=0&oh=5b9f310ee9c04eb88845120c9c201a20&oe=5C355C9E',
+  'https://scontent-amt2-1.xx.fbcdn.net/v/t1.0-9/41193817_1945145458906536_6687218282635722752_n.jpg?_nc_cat=0&oh=fe254782ad99d2e1147cdb6a77c864f9&oe=5C33EFFA',
+  'https://scontent-amt2-1.xx.fbcdn.net/v/t1.0-9/40640458_1940139052740510_8556501643149967360_n.jpg?_nc_cat=0&oh=0d8588f340ac13b0b9ecba7c8f65897a&oe=5C22103E',
+  'https://scontent-amt2-1.xx.fbcdn.net/v/t1.0-9/40498369_549081422214237_4524783952262594560_n.jpg?_nc_cat=0&oh=26eac87ac72002ebc8859a1dd0be1483&oe=5C3B5024',
+  'https://scontent-amt2-1.xx.fbcdn.net/v/t1.0-9/40383156_547127202409659_6804658446743371776_n.jpg?_nc_cat=0&oh=50c58e0e59cb4c05b5a298e417cc88e7&oe=5C265D76',
+  'https://scontent-amt2-1.xx.fbcdn.net/v/t1.0-9/40409985_547098722412507_5438486992641851392_n.jpg?_nc_cat=0&oh=afb5e21c4d6c59fe75676325ddf58b0d&oe=5C24752E',
+  'https://scontent-amt2-1.xx.fbcdn.net/v/t1.0-9/38825247_530042774118102_6644740351703646208_n.jpg?_nc_cat=0&oh=58cceb0a66dd2f85997ec9b60b219bd8&oe=5C335FDA',
+  'https://scontent-amt2-1.xx.fbcdn.net/v/t1.0-9/38728886_528222314300148_4255373495736729600_n.jpg?_nc_cat=0&oh=bbfd7a1863f978ea00decd3ff6868c28&oe=5C2219EF',
+	
   
 ];
 
