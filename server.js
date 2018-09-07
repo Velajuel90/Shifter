@@ -7,6 +7,7 @@ express(args);
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.username}!`);
+      client.user.setStatus('dnd');
       client.user.setActivity(`S_help | New memes are coming soon!`);
 });
 	
