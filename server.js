@@ -1848,6 +1848,11 @@ var answers = [
   'https://cdn.discordapp.com/attachments/440234197093842985/465886354429968404/FB_IMG_1531146321333.jpg',
   'https://cdn.discordapp.com/attachments/440234197093842985/465886353889034241/FB_IMG_1531146268735.jpg',
   'https://cdn.discordapp.com/attachments/440234197093842985/465886353889034240/FB_IMG_1531146288809.jpg',
+  'https://cdn.discordapp.com/attachments/440234197093842985/487575534105133056/FB_IMG_1536317452374.jpg',
+  'https://cdn.discordapp.com/attachments/440234197093842985/486856678763921409/FB_IMG_1536146070287.jpg',
+  'https://cdn.discordapp.com/attachments/440234197093842985/486497555065077760/FB_IMG_1536060442837.jpg',
+  'https://cdn.discordapp.com/attachments/440234197093842985/486283693963608096/FB_IMG_1536009441295.jpg',
+
   
 ];
 
@@ -1935,7 +1940,27 @@ var answers = [
 'https://cdn.discordapp.com/attachments/440232478242897933/460204170314514432/File_006.jpeg',
 'https://cdn.discordapp.com/attachments/440232478242897933/460203883558469652/0513034a8c16dd6ab1dfe492fee34220--creepy-sloth-sloth-memes.png',
 'https://cdn.discordapp.com/attachments/440232478242897933/460203374315438091/image.jpg',
-  
+'https://cdn.discordapp.com/attachments/440234197093842985/486856917382070272/FB_IMG_1536146129248.jpg',
+'https://img-9gag-fun.9cache.com/photo/aKjRrw3_700bwp.webp',
+'https://img-9gag-fun.9cache.com/photo/abM776r_460swp.webp',
+'https://img-9gag-fun.9cache.com/photo/aLjxZoP_460swp.webp',
+'https://img-9gag-fun.9cache.com/photo/adKEEQB_460swp.webp',
+'https://img-9gag-fun.9cache.com/photo/aDxyyR9_460swp.webp',
+'https://img-9gag-fun.9cache.com/photo/aAxjj29_460swp.webp',
+'https://img-9gag-fun.9cache.com/photo/aeMLvNQ_460swp.webp',
+'https://img-9gag-fun.9cache.com/photo/ax15L4L_460swp.webp',
+'https://img-9gag-fun.9cache.com/photo/am73ejd_460swp.webp',
+'https://img-9gag-fun.9cache.com/photo/a9pogGo_460swp.webp',
+'https://img-9gag-fun.9cache.com/photo/aN1NEb4_460swp.webp',
+'https://img-9gag-fun.9cache.com/photo/aV3AAqy_460swp.webp',
+'https://img-9gag-fun.9cache.com/photo/a5o4Ozr_460swp.webp',
+'https://img-9gag-fun.9cache.com/photo/awXwW8D_460swp.webp',
+'https://img-9gag-fun.9cache.com/photo/aDxyyDN_460swp.webp',
+'https://img-9gag-fun.9cache.com/photo/a0KBrDL_460swp.webp',
+'https://img-9gag-fun.9cache.com/photo/ap2OWLb_460swp.webp',
+'https://img-9gag-fun.9cache.com/photo/aBxpByN_460swp.webp',
+'https://img-9gag-fun.9cache.com/photo/avONK8b_460swp.webp',
+'https://img-9gag-fun.9cache.com/photo/ajEpzRg_460swp.webp',
   
 ]
 
