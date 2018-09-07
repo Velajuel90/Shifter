@@ -923,219 +923,216 @@ message.channel.send(diceroll2);
 
 client.on("message", function(message) {
     if (message.content == "S_gay") {
-let messageArray = message.content.split(" ");
-  let args = messageArray.slice(1);
-   let taguser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
 
 var answers = [ 
 
-  `${taguser} is 1`, 
+ '1', 
 
-  `${taguser} is 2`,
+  '2',
 
-  `${taguser} is 3`,
+  '3',
   
-  `${taguser} is 4`,
+  '4',
   
-  `${taguser} is 5`,
+  '5',
   
-  `${taguser} is 6`,
+  '6',
   
-  `${taguser} is 7`,
+  '7',
   
-  `${taguser} is 8`,
+  '8',
   
-  `${taguser} is 9`,
+  '9',
   
-  `${taguser} is 10`,
+  '10',
   
-  `${taguser} is 11`,
+  '11',
   
-  `${taguser} is 12`,
+  '12',
   
-  `${taguser} is 13`,
+  '13',
   
-  `${taguser} is 14`,
+  '14',
   
-  `${taguser} is 15`,
+  '15',
   
-  `${taguser} is 16`,
+  '16',
   
-  `${taguser} is 17`,
+  '17',
   
-  `${taguser} is 18`,
+  '18',
   
-  `${taguser} is 19`,
+  '19',
   
-  `${taguser} is 20`,
+  '20',
   
-  `${taguser} is 21`,
+  '21',
   
-  `${taguser} is 22`,
+  '22',
   
-  `${taguser} is 23`,
+  '23',
   
-  `${taguser} is 24`,
+  '24',
   
-  `${taguser} is 25`,
+  '25',
   
-  `${taguser} is 26`,
+  '26',
   
-  `${taguser} is 27`,
+  '27',
   
-  `${taguser} is 28`,
+  '28',
   
-  `${taguser} is 29`,
+  '29',
   
-  `${taguser} is 30`,
+  '30',
   
-  `${taguser} is 31`,
+  '31',
   
-  `${taguser} is 32`,
+  '32',
   
-  `${taguser} is 33`,
+  '33',
   
-  `${taguser} is 34`,
+  '34',
   
-  `${taguser} is 35`,
+  '35',
   
-  `${taguser} is 36`,
+  '36',
   
-  `${taguser} is 37`,
+  '37',
   
-  `${taguser} is 38`,
+  '38',
   
-  `${taguser} is 39`,
+  '39',
   
-  `${taguser} is 40`,
+  '40',
   
-  `${taguser} is 41`,
+  '41',
   
-  `${taguser} is 42`,
+  '42',
   
-  `${taguser} is 43`,
+  '43',
   
-  `${taguser} is 44`,
+  '44',
   
-  `${taguser} is 45`,
+  '45',
   
-  `${taguser} is 46`,
+  '46',
   
-  `${taguser} is 47`,
+  '47',
   
-  `${taguser} is 48`,
+  '48',
   
-  `${taguser} is 49`,
+  '49',
   
-  `${taguser} is 50`,
+  '50',
   
-  `${taguser} is 51`,
+  '51',
   
-  `${taguser} is 52`,
+  '52',
   
-  `${taguser} is 53`,
+  '53',
   
-  `${taguser} is 54`,
+  '54',
   
-  `${taguser} is 55`,
+  '55',
   
-  `${taguser} is 56`,
+  '56',
   
-  `${taguser} is 57`,
+  '57',
   
-  `${taguser} is 58`,
+  '58',
   
-  `${taguser} is 59`,
+  '59',
   
-  `${taguser} is 60`,
+  '60',
   
-  `${taguser} is 61`,
+  '61',
   
-  `${taguser} is 62`,
+  '62',
   
-  `${taguser} is 63`,
+  '63',
   
-  `${taguser} is 64`,
+  '64',
   
-  `${taguser} is 65`,
+  '65',
   
-  `${taguser} is 66`,
+  '66',
   
-  `${taguser} is 67`,
+  '67',
   
-  `${taguser} is 68`,
+  '68',
   
-  `${taguser} is 69`,
+  '69',
   
-  `${taguser} is 70`,
+  '70',
   
-  `${taguser} is 71`,
+  '71',
   
-  `${taguser} is 72`,
+  '72',
   
-  `${taguser} is 73`,
+  '73',
   
-  `${taguser} is 74`,
+  '74',
   
-  `${taguser} is 75`,
+  '75',
   
-  `${taguser} is 76`,
+  '76',
   
-  `${taguser} is 77`,
+  '77',
   
-  `${taguser} is 78`,
+  '78',
   
-  `${taguser} is 79`,
+  '79',
   
-  `${taguser} is 80`,
+  '80',
   
-  `${taguser} is 81`,
+  '81',
   
-  `${taguser} is 82`,
+  '82',
   
-  `${taguser} is 83`,
+  '83',
   
-  `${taguser} is 84`,
+  '84',
   
-  `${taguser} is 85`,
+  '85',
   
-  `${taguser} is 86`,
+  '86',
   
-  `${taguser} is 87`,
+  '87',
   
-  `${taguser} is 88`,
+  '88',
   
-  `${taguser} is 89`,
+  '89',
   
-  `${taguser} is 90`,
+  '90',
   
-  `${taguser} is 91`,
+  '91',
   
-  `${taguser} is 92`,
+  '92',
   
-  `${taguser} is 93`,
+  '93',
   
-  `${taguser} is 94`,
+  '94',
   
-  `${taguser} is 95`,
+  '95',
   
-  `${taguser} is 96`,
+  '96',
   
-  `${taguser} is 97`,
+  '97',
   
-  `${taguser} is 98`,
+  '98',
   
-  `${taguser} is 99`,
+  '99',
   
-  `${taguser} is 100`,
+  '100',
   
-  `${taguser} is 200`,
+  '200',
 ];
 
 let gay = answers[Math.floor(Math.random() * answers.length)];
       let gayresult = new Discord.RichEmbed()
     .setColor("#f21890")
-    .addField("Shifter Gay", `:gay_pride_flag: ${gay}% gay`);
+    .addField("Shifter Gay", `:gay_pride_flag: You are ${gay}% gay`);
 
 message.channel.send(gayresult);
 
