@@ -256,7 +256,7 @@ client.on("message", (message) => {
     if(!kUser) return message.channel.send(":x: Can't find user! Please check it and try again.");
     let kReason = args.join(" ").slice(22);
     if(!message.member.hasPermission("MANAGE_MEMBERS")) return message.channel.send(":x: That person can't be kicked! Reason: You do not have the permission MANAGE_MEMBERS. Ask your owner for the permission.");
-    if(kUser.hasPermission("MANAGE_MESSAGES")) return message.channel.send(":x: That person can't be kicked! Reason: It is a bot or it is not a valid reason");
+    if(kUser.hasPermission("MANAGE_MESSAGES")) return message.channel.send(":x: That person can't be kicked! Reason: The user has the same permissions, it is a bot or it is not a valid reason");
 
     let kickEmbed = new Discord.RichEmbed()
     .setDescription("Shifter Kick")
@@ -288,7 +288,7 @@ client.on("message", (message) => {
     let kUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
     if(!kUser) return message.channel.send(":x: Can't find user! Please check it and try again.");
     let kReason = args.join(" ").slice(22);
-    if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send(":x: That person can't be warned! Reason: You do not have the permission MANAGE_MEMBERS. Ask your owner for the permission.");
+    if(!message.member.hasPermission("MANAGE_MEMBERS")) return message.channel.send(":x: That person can't be warned! Reason: You do not have the permission MANAGE_MEMBERS. Ask your owner for the permission.");
 
     let warned = new Discord.RichEmbed()
     .setDescription("Shifter Warn")
@@ -370,7 +370,7 @@ client.on("message", (message) => {
     if(!bUser) return message.channel.send(":x: Can't find user! Please check it and try again");
     let bReason = args.join(" ").slice(22);
     if(!message.member.hasPermission("MANAGE_MEMBERS")) return message.channel.send(":x: That person can't be banned! Reason: You do not have the permission MANAGE_MEMBERS. Ask your owner for the permission.");
-    if(bUser.hasPermission("MANAGE_MESSAGES")) return message.channel.send(":x: That person can't be banned! Reason: It is a bot or it is not a valid reason.");
+    if(bUser.hasPermission("MANAGE_MESSAGES")) return message.channel.send(":x: That person can't be banned! Reason: The user has the same permissions, it is a bot or it is not a valid reason.");
 
     let banEmbed = new Discord.RichEmbed()
     .setDescription("Shifter Ban")
