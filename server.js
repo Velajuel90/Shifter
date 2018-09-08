@@ -21,6 +21,16 @@ message.channel.send(ping);
 });
 
 client.on("message", (message) => {
+  if (message.content.startsWith("S_updates")) {
+    let ping = new Discord.RichEmbed()
+    .setColor("#bc0000")
+    .addField("Shifter Update", ":no_entry_sign: There are no updates for Shifter right now. I search for updates automatically.");
+
+message.channel.send(ping);
+  }
+});
+
+client.on("message", (message) => {
   if (message.content.startsWith("goedemorgen")) {
     let ping = new Discord.RichEmbed()
     .setColor("#bc0000")
@@ -316,6 +326,7 @@ client.on('message', (message) => {
   .addField("S_kick <@user> <reason>", 'Kick an user. Do not use the <>. Example: S_kick @user#0000 angry')
   .addField("S_ban <@user> <reason>", 'Ban an user. Do not use the <>. Example: S_ban @user#0000 stupid')
   .addField("S_warn <@user> <reason>", 'Warn an user. Do not use the <>. Example: S_warn @user#0000 rude to people')
+  .addField("S_updates", 'Check if Shifter has updates. The updates does he download automatically')
   .addField("Shifter Good Morning", 'Shifter says good morning to you when you type Goedemorgen, Morning, Good morning. It supports only Dutch and English now. Later more languages!')
 
     message.member.send(embed);
