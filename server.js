@@ -137,6 +137,18 @@ client.on("message", (message) => {
 });
 
 client.on("message", (message) => {
+	if (message.content.startsWith("S_1purge")) {
+      let messagecount = parseInt(1);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let purge2 = new Discord.RichEmbed()
+    .setColor("#bc0000")
+    .addField("Shifter Purge", ":wastebasket: I have deleted the last 1 messages");
+    
+    message.channel.send(purge2);
+	}
+});
+
+client.on("message", (message) => {
 	if (message.content.startsWith("S_2purge")) {
       let messagecount = parseInt(2);
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
@@ -245,6 +257,126 @@ client.on("message", (message) => {
 });
 
 client.on("message", (message) => {
+	if (message.content.startsWith("S_11purge")) {
+      let messagecount = parseInt(11);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let purge2 = new Discord.RichEmbed()
+ .setColor("#bc0000")
+    .addField("Shifter Purge", ":wastebasket: I have deleted the last 11 messages.");
+    
+    message.channel.send(purge2);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.startsWith("S_12purge")) {
+      let messagecount = parseInt(12);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let purge2 = new Discord.RichEmbed()
+ .setColor("#bc0000")
+    .addField("Shifter Purge", ":wastebasket: I have deleted the last 12 messages.");
+    
+    message.channel.send(purge2);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.startsWith("S_13purge")) {
+      let messagecount = parseInt(10);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let purge2 = new Discord.RichEmbed()
+ .setColor("#bc0000")
+    .addField("Shifter Purge", ":wastebasket: I have deleted the last 13 messages.");
+    
+    message.channel.send(purge2);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.startsWith("S_14purge")) {
+      let messagecount = parseInt(14);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let purge2 = new Discord.RichEmbed()
+ .setColor("#bc0000")
+    .addField("Shifter Purge", ":wastebasket: I have deleted the last 14 messages.");
+    
+    message.channel.send(purge2);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.startsWith("S_15purge")) {
+      let messagecount = parseInt(15);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let purge2 = new Discord.RichEmbed()
+ .setColor("#bc0000")
+    .addField("Shifter Purge", ":wastebasket: I have deleted the last 15 messages.");
+    
+    message.channel.send(purge2);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.startsWith("S_16purge")) {
+      let messagecount = parseInt(16);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let purge2 = new Discord.RichEmbed()
+ .setColor("#bc0000")
+    .addField("Shifter Purge", ":wastebasket: I have deleted the last 16 messages.");
+    
+    message.channel.send(purge2);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.startsWith("S_17purge")) {
+      let messagecount = parseInt(17);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let purge2 = new Discord.RichEmbed()
+ .setColor("#bc0000")
+    .addField("Shifter Purge", ":wastebasket: I have deleted the last 17 messages.");
+    
+    message.channel.send(purge2);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.startsWith("S_18purge")) {
+      let messagecount = parseInt(18);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let purge2 = new Discord.RichEmbed()
+ .setColor("#bc0000")
+    .addField("Shifter Purge", ":wastebasket: I have deleted the last 18 messages.");
+    
+    message.channel.send(purge2);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.startsWith("S_19purge")) {
+      let messagecount = parseInt(19);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let purge2 = new Discord.RichEmbed()
+ .setColor("#bc0000")
+    .addField("Shifter Purge", ":wastebasket: I have deleted the last 19 messages.");
+    
+    message.channel.send(purge2);
+	}
+});
+
+client.on("message", (message) => {
+	if (message.content.startsWith("S_20purge")) {
+      let messagecount = parseInt(20);
+		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
+    let purge2 = new Discord.RichEmbed()
+ .setColor("#bc0000")
+    .addField("Shifter Purge", ":wastebasket: I have deleted the last 20 messages.");
+    
+    message.channel.send(purge2);
+	}
+});
+
+client.on("message", (message) => {
 
   if (message.content.startsWith("S_kick")) {
   if(message.author.bot) return;
@@ -256,7 +388,7 @@ client.on("message", (message) => {
     if(!kUser) return message.channel.send(":x: Can't find user! Please check it and try again.");
     let kReason = args.join(" ").slice(22);
     if(!message.member.hasPermission("MANAGE_MEMBERS")) return message.channel.send(":x: That person can't be kicked! Reason: You do not have the permission MANAGE_MEMBERS. Ask your owner for the permission.");
-    if(kUser.hasPermission("MANAGE_MESSAGES")) return message.channel.send(":x: That person can't be kicked! Reason: The user has the same permissions, it is a bot or it is not a valid reason");
+    if(kUser.hasPermission("ADMINISTRATOR")) return message.channel.send(":x: That person can't be kicked! Reason: The user has the same permissions, it is a bot or it is not a valid reason");
 
     let kickEmbed = new Discord.RichEmbed()
     .setDescription("Shifter Kick")
@@ -322,7 +454,7 @@ client.on('message', (message) => {
   .addField("S_invite", 'Gets invite link for your server')
   .addField("S_support", 'Link to support server')
   .addField("S_vote", 'Vote for the bot')
-  .addField("S_<number>purge", 'Deletes some messages. Do not use the <>. You can choose between 2 and 10. Example: S_4purge')
+  .addField("S_<number>purge", 'Deletes some messages. Do not use the <>. You can choose between 1 and 20. Example: S_4purge')
   .addField("S_kick <@user> <reason>", 'Kick an user. Do not use the <>. Example: S_kick @user#0000 angry')
   .addField("S_ban <@user> <reason>", 'Ban an user. Do not use the <>. Example: S_ban @user#0000 stupid')
   .addField("S_warn <@user> <reason>", 'Warn an user. Do not use the <>. Example: S_warn @user#0000 rude to people')
