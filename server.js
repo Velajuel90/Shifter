@@ -24,7 +24,7 @@ client.on("message", (message) => {
   if (message.content.startsWith("S_updates")) {
     let ping = new Discord.RichEmbed()
     .setColor("#bc0000")
-    .addField("Shifter Update", ":information_source: There are updates. Security update for Shifter v1.1.3 [SH113891], Command update for Shifter Purge [SH113561]");
+    .addField("Shifter Update", ":white_check_mark: The bot is up-to-date! No updates available.");
 
 message.channel.send(ping);
   }
