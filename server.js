@@ -7,7 +7,7 @@ express(args);
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.username}!`);
-      client.user.setActivity(`S_help | ${client.guilds.size} servers | v1.1.3`);
+      client.user.setActivity(`Please wait while Shifter Updater configures Shifter`);
 });
 	
 client.on("message", (message) => {
@@ -24,7 +24,7 @@ client.on("message", (message) => {
   if (message.content.startsWith("S_updates")) {
     let ping = new Discord.RichEmbed()
     .setColor("#bc0000")
-    .addField("Shifter Update", ":white_check_mark: The bot is up-to-date! No updates available.");
+    .addField("Shifter Update", ":information_source: There are updates. Update for Shifter_dutch/Shifter_meme SH887123. Update for Shifter SH909633");
 
 message.channel.send(ping);
   }
