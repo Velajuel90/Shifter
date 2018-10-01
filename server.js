@@ -24,7 +24,7 @@ client.on("message", (message) => {
   if (message.content.startsWith("S_updates")) {
     let ping = new Discord.RichEmbed()
     .setColor("#ffab43")
-    .addField("Shifter Update", ":information_source: There are updates. Update for Shifter_dutch/Shifter_meme SH887123. Update for Shifter SH909633");
+    .addField("Shifter Update", ":white_check_mark: Shifter is up-to-date!");
 
 message.channel.send(ping);
   }
