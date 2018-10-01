@@ -7,13 +7,13 @@ express(args);
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.username}!`);
-      client.user.setActivity(`Please wait while Shifter Updater configures Shifter`);
+      client.user.setActivity(`S_help | ${client.guilds.size} servers | v1.2`);
 });
 	
 client.on("message", (message) => {
   if (message.content.startsWith("S_ping")) {
     let ping = new Discord.RichEmbed()
-    .setColor("#bc0000")
+    .setColor("#2441e2")
     .addField("Shifter Ping", "Pong!");
 
 message.channel.send(ping);
@@ -120,7 +120,7 @@ client.on("message", (message) => {
     .addField("Created on", "Sunday, June 16 2018")
     .addField("Servers running", `${client.guilds.size}`)
     .addField("Amount users", `${client.users.size}`)
-    .addField("Commands", "37");
+    .addField("Commands", "38");
 
 message.channel.send(about);
   }
@@ -142,7 +142,7 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
     .setColor("#bc0000")
-    .addField("Shifter Purge", ":wastebasket: I have deleted the last 1 messages");
+    .addField("Shifter Purge", ":wastebasket: I have deleted the last 1 message");
     
     message.channel.send(purge2);
 	}
@@ -722,7 +722,17 @@ client.on('message', (message) => {
     
   `${kUser} fell in the water, fell off a waterfall and fell on a stone. That hurts a lot. ${kUser} got so much hits that he/she did not survive it.`,
     
-   
+  `${kUser} was hit by an explosion that ${message.author} made.`
+
+  `${message.author} was just fishing at a river. ${kUser} was swimming in the river and hit by a ship.`
+	  
+  `${kUser} tried to kill ${message.author} with a sneaky face. Sorry but you failed my friend.`
+	 
+  `${kUser} was killed by a demon. Did you not know they exist? I believe they exist....`
+
+  `I have a story for you. Just not a normal story. I was walking with ${kUser} in the forest. I heard something. Some seconds later ${kUser} was killed by a monster. I did not see which kind of monster it was.`
+
+  
 ];
 
 let kill2 = answers[Math.floor(Math.random() * answers.length)];
@@ -2009,7 +2019,13 @@ var answers = [
   'https://scontent-amt2-1.xx.fbcdn.net/v/t1.0-9/40409985_547098722412507_5438486992641851392_n.jpg?_nc_cat=0&oh=afb5e21c4d6c59fe75676325ddf58b0d&oe=5C24752E',
   'https://scontent-amt2-1.xx.fbcdn.net/v/t1.0-9/38825247_530042774118102_6644740351703646208_n.jpg?_nc_cat=0&oh=58cceb0a66dd2f85997ec9b60b219bd8&oe=5C335FDA',
   'https://scontent-amt2-1.xx.fbcdn.net/v/t1.0-9/38728886_528222314300148_4255373495736729600_n.jpg?_nc_cat=0&oh=bbfd7a1863f978ea00decd3ff6868c28&oe=5C2219EF',
-	
+  'https://cdn.discordapp.com/attachments/440234197093842985/495259089111220224/FB_IMG_1538149350725.jpg',
+  'https://cdn.discordapp.com/attachments/440234197093842985/494468850469830657/FB_IMG_1537960948629.jpg',
+  'https://cdn.discordapp.com/attachments/440234197093842985/494430447800025088/FB_IMG_1537951785909.jpg',
+  'https://cdn.discordapp.com/attachments/440234197093842985/490599468463423508/FB_IMG_1537038416527.jpg',
+  'https://cdn.discordapp.com/attachments/440234197093842985/490567933941121024/FB_IMG_1537030891993.jpg',
+  'https://cdn.discordapp.com/attachments/440234197093842985/490204995757539329/FB_IMG_1536944370699.jpg',
+  
   
 ];
 
@@ -2118,6 +2134,11 @@ var answers = [
 'https://img-9gag-fun.9cache.com/photo/aBxpByN_460swp.webp',
 'https://img-9gag-fun.9cache.com/photo/avONK8b_460swp.webp',
 'https://img-9gag-fun.9cache.com/photo/ajEpzRg_460swp.webp',
+'https://cdn.discordapp.com/attachments/477815608139055104/490177475004071948/XihW8jEb4CE.png',
+'https://cdn.discordapp.com/attachments/477815608139055104/490177451721228288/XeHs95RDbvc.png',
+'https://cdn.discordapp.com/attachments/477815608139055104/482550482565595156/LOCATE_MEME.jpg',
+'https://cdn.discordapp.com/attachments/477815608139055104/481389301620539392/image.jpg',
+
   
 ]
 
