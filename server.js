@@ -23,7 +23,7 @@ message.channel.send(ping);
 client.on("message", (message) => {
   if (message.content.startsWith("S_updates")) {
     let ping = new Discord.RichEmbed()
-    .setColor("#bc0000")
+    .setColor("#ffab43")
     .addField("Shifter Update", ":information_source: There are updates. Update for Shifter_dutch/Shifter_meme SH887123. Update for Shifter SH909633");
 
 message.channel.send(ping);
@@ -33,7 +33,7 @@ message.channel.send(ping);
 client.on("message", (message) => {
   if (message.content.startsWith("goedemorgen")) {
     let ping = new Discord.RichEmbed()
-    .setColor("#bc0000")
+    .setColor("#ffab43")
     .addField("Shifter Good Morning", `Goedemorgen ${message.author}`);
 
 message.channel.send(ping);
@@ -43,7 +43,7 @@ message.channel.send(ping);
 client.on("message", (message) => {
   if (message.content.startsWith("Goedemorgen")) {
     let ping = new Discord.RichEmbed()
-    .setColor("#bc0000")
+    .setColor("#ffab43")
     .addField("Shifter Good Morning", `Goedemorgen ${message.author}`);
 
 message.channel.send(ping);
@@ -53,7 +53,7 @@ message.channel.send(ping);
 client.on("message", (message) => {
   if (message.content.startsWith("morguh")) {
     let ping = new Discord.RichEmbed()
-    .setColor("#bc0000")
+    .setColor("#ffab43")
     .addField("Shifter Good Morning", `Goedemorgen ${message.author}`);
 
 message.channel.send(ping);
@@ -63,7 +63,7 @@ message.channel.send(ping);
 client.on("message", (message) => {
   if (message.content.startsWith("Morguh")) {
     let ping = new Discord.RichEmbed()
-    .setColor("#bc0000")
+    .setColor("#ffab43")
     .addField("Shifter Good Morning", `Goedemorgen ${message.author}`);
 
 message.channel.send(ping);
@@ -73,7 +73,7 @@ message.channel.send(ping);
 client.on("message", (message) => {
   if (message.content.startsWith("Good morning")) {
     let ping = new Discord.RichEmbed()
-    .setColor("#bc0000")
+    .setColor("#ffab43")
     .addField("Shifter Good Morning", `Good morning ${message.author}`);
 
 message.channel.send(ping);
@@ -83,7 +83,7 @@ message.channel.send(ping);
 client.on("message", (message) => {
   if (message.content.startsWith("good morning")) {
     let ping = new Discord.RichEmbed()
-    .setColor("#bc0000")
+    .setColor("#ffab43")
     .addField("Shifter Good Morning", `Good morning ${message.author}`);
 
 message.channel.send(ping);
@@ -93,7 +93,7 @@ message.channel.send(ping);
 client.on("message", (message) => {
   if (message.content.startsWith("mornin")) {
     let ping = new Discord.RichEmbed()
-    .setColor("#bc0000")
+    .setColor("#ffab43")
     .addField("Shifter Good Morning", `Good morning ${message.author}`);
 
 message.channel.send(ping);
@@ -103,7 +103,7 @@ message.channel.send(ping);
 client.on("message", (message) => {
   if (message.content.startsWith("Mornin")) {
     let ping = new Discord.RichEmbed()
-    .setColor("#bc0000")
+    .setColor("#ffab43")
     .addField("Shifter Good Morning", `Good morning ${message.author}`);
 
 message.channel.send(ping);
@@ -114,7 +114,7 @@ client.on("message", (message) => {
   if (message.content.startsWith("S_about")) {
     let about = new Discord.RichEmbed()
     .setDescription("Shifter About")
-    .setColor("#bc0000")
+    .setColor("#12b629")
     .addField("Name", "Shifter")
     .addField("Created by", "Fermion#3927")
     .addField("Created on", "Sunday, June 16 2018")
@@ -129,7 +129,7 @@ message.channel.send(about);
 client.on("message", (message) => {
   if (message.content.startsWith("S_vote")) {
     let vote = new Discord.RichEmbed()
-    .setColor("#bc0000")
+    .setColor("#12b629")
     .addField("Shifter Vote", "Vote me here: https://discordbots.org/bot/446750923222417428/vote");
     
     message.channel.send(vote);
@@ -141,7 +141,7 @@ client.on("message", (message) => {
       let messagecount = parseInt(1);
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
-    .setColor("#bc0000")
+    .setColor("#000000")
     .addField("Shifter Purge", ":wastebasket: I have deleted the last 1 message");
     
     message.channel.send(purge2);
@@ -153,7 +153,7 @@ client.on("message", (message) => {
       let messagecount = parseInt(2);
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
-    .setColor("#bc0000")
+    .setColor("#000000")
     .addField("Shifter Purge", ":wastebasket: I have deleted the last 2 messages");
     
     message.channel.send(purge2);
@@ -165,7 +165,7 @@ client.on("message", (message) => {
       let messagecount = parseInt(3);
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
-    .setColor("#bc0000")
+    .setColor("#000000")
     .addField("Shifter Purge", ":wastebasket: I have deleted the last 3 messages.");
     
     message.channel.send(purge2);
@@ -177,7 +177,7 @@ client.on("message", (message) => {
       let messagecount = parseInt(4);
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
-    .setColor("#bc0000")
+    .setColor("#000000")
     .addField("Shifter Purge", ":wastebasket: I have deleted the last 4 messages.");
     
     message.channel.send(purge2);
@@ -189,7 +189,7 @@ client.on("message", (message) => {
       let messagecount = parseInt(5);
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
-   .setColor("#bc0000")
+   .setColor("#000000")
     .addField("Shifter Purge", ":wastebasket: I have deleted the last 5 messages.");
     
     message.channel.send(purge2);
@@ -201,7 +201,7 @@ client.on("message", (message) => {
       let messagecount = parseInt(6);
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
-    .setColor("#bc0000")
+    .setColor("#000000")
     .addField("Shifter Purge", ":wastebasket: I have deleted the last 6 messages.");
     
     message.channel.send(purge2);
@@ -213,7 +213,7 @@ client.on("message", (message) => {
       let messagecount = parseInt(7);
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
-    .setColor("#bc0000")
+    .setColor("#000000")
     .addField("Shifter Purge", ":wastebasket: I have deleted the last 7 messages.");
     
     message.channel.send(purge2);
@@ -225,7 +225,7 @@ client.on("message", (message) => {
       let messagecount = parseInt(8);
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
-  .setColor("#bc0000")
+  .setColor("000000")
     .addField("Shifter Purge", ":wastebasket: I have deleted the last 8 messages.");
     
     message.channel.send(purge2);
@@ -237,7 +237,7 @@ client.on("message", (message) => {
       let messagecount = parseInt(9);
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
-    .setColor("#bc0000")
+    .setColor("#000000")
     .addField("Shifter Purge", ":wastebasket: I have deleted the last 9 messages.");
     
     message.channel.send(purge2);
@@ -249,7 +249,7 @@ client.on("message", (message) => {
       let messagecount = parseInt(10);
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
- .setColor("#bc0000")
+ .setColor("#000000")
     .addField("Shifter Purge", ":wastebasket: I have deleted the last 10 messages.");
     
     message.channel.send(purge2);
@@ -261,7 +261,7 @@ client.on("message", (message) => {
       let messagecount = parseInt(11);
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
- .setColor("#bc0000")
+ .setColor("#000000")
     .addField("Shifter Purge", ":wastebasket: I have deleted the last 11 messages.");
     
     message.channel.send(purge2);
@@ -273,7 +273,7 @@ client.on("message", (message) => {
       let messagecount = parseInt(12);
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
- .setColor("#bc0000")
+ .setColor("#000000")
     .addField("Shifter Purge", ":wastebasket: I have deleted the last 12 messages.");
     
     message.channel.send(purge2);
@@ -285,7 +285,7 @@ client.on("message", (message) => {
       let messagecount = parseInt(10);
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
- .setColor("#bc0000")
+ .setColor("#000000")
     .addField("Shifter Purge", ":wastebasket: I have deleted the last 13 messages.");
     
     message.channel.send(purge2);
@@ -297,7 +297,7 @@ client.on("message", (message) => {
       let messagecount = parseInt(14);
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
- .setColor("#bc0000")
+ .setColor("#000000")
     .addField("Shifter Purge", ":wastebasket: I have deleted the last 14 messages.");
     
     message.channel.send(purge2);
@@ -309,7 +309,7 @@ client.on("message", (message) => {
       let messagecount = parseInt(15);
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
- .setColor("#bc0000")
+ .setColor("#000000")
     .addField("Shifter Purge", ":wastebasket: I have deleted the last 15 messages.");
     
     message.channel.send(purge2);
@@ -321,7 +321,7 @@ client.on("message", (message) => {
       let messagecount = parseInt(16);
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
- .setColor("#bc0000")
+ .setColor("#000000")
     .addField("Shifter Purge", ":wastebasket: I have deleted the last 16 messages.");
     
     message.channel.send(purge2);
@@ -333,7 +333,7 @@ client.on("message", (message) => {
       let messagecount = parseInt(17);
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
- .setColor("#bc0000")
+ .setColor("#000000")
     .addField("Shifter Purge", ":wastebasket: I have deleted the last 17 messages.");
     
     message.channel.send(purge2);
@@ -345,7 +345,7 @@ client.on("message", (message) => {
       let messagecount = parseInt(18);
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
- .setColor("#bc0000")
+ .setColor("#000000")
     .addField("Shifter Purge", ":wastebasket: I have deleted the last 18 messages.");
     
     message.channel.send(purge2);
@@ -357,7 +357,7 @@ client.on("message", (message) => {
       let messagecount = parseInt(19);
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
- .setColor("#bc0000")
+ .setColor("#000000")
     .addField("Shifter Purge", ":wastebasket: I have deleted the last 19 messages.");
     
     message.channel.send(purge2);
@@ -369,7 +369,7 @@ client.on("message", (message) => {
       let messagecount = parseInt(20);
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
- .setColor("#bc0000")
+ .setColor("#000000")
     .addField("Shifter Purge", ":wastebasket: I have deleted the last 20 messages.");
     
     message.channel.send(purge2);
@@ -554,7 +554,7 @@ var answers = [
 
 let win = answers[Math.floor(Math.random() * answers.length)];
 let win2 = new Discord.RichEmbed()
-    .setColor("#bc0000")
+    .setColor("#ffff66")
     .addField("Shifter Win", `${win}`);
 
 message.channel.send(win2);
@@ -642,7 +642,7 @@ var answers = [
 
 let win = answers[Math.floor(Math.random() * answers.length)];
 let win2 = new Discord.RichEmbed()
-    .setColor("#bc0000")
+    .setColor("#ff7f19")
     .addField("Shifter Useless Questions", `${win}`);
 
 message.channel.send(win2);
@@ -817,7 +817,7 @@ client.on('message', (message) => {
 client.on('message', (message) => {
 	if (message.content.startsWith("S_invite")) {
     let invite = new Discord.RichEmbed()
-    .setColor("#bc0000")
+    .setColor("#12b629")
     .addField("Shifter Invite", "Invite me here: https://discordapp.com/oauth2/authorize?&client_id=446750923222417428&scope=bot&permissions=8");
     
     message.channel.send(invite);
@@ -827,7 +827,7 @@ client.on('message', (message) => {
 client.on('message', (message) => {
 	if (message.content.startsWith("S_support")) {
     let support = new Discord.RichEmbed()
-    .setColor("#bc0000")
+    .setColor("#12b629")
     .addField("Shifter Support", "https://discord.gg/6rzUtyf");
     
     message.channel.send(support);
@@ -1024,7 +1024,7 @@ var answers = [
 
 let card = answers[Math.floor(Math.random() * answers.length)];
     let cardgame = new Discord.RichEmbed()
-    .setColor("#bc0000")
+    .setColor("#7b72b6")
     .addField("Shifter Card", `I had ${card}`);
 
 message.channel.send(cardgame);
@@ -1906,7 +1906,7 @@ var answers = [
 
 let randomAnswerPicker = answers[Math.floor(Math.random() * answers.length)];
       let lottery = new Discord.RichEmbed()
-    .setColor("#bc0000")
+    .setColor("#ffff66")
     .addField("Shifter Lottery", `You bought a ticket for €5. You won €${randomAnswerPicker}! Were you lucky or was it not your day? :moneybag:`);
 
 message.channel.send(lottery);
