@@ -494,6 +494,19 @@ client.on('message', (message) => {
 });
 
 client.on("message", (message) => {
+  if (message.content.startsWith("S_shop")) {
+    let ping = new Discord.RichEmbed()
+    .setDescription("Shifter Online Shop V1.0")
+    .setColor("#ffab43")
+    .addField(":gift: Gift", `Price: $15`) 
+    .addField(":lock: Lock", `Price: $5`)
+    .addField(":tangerine: Tangerine", `Price $2`)
+    .addField(":cookie: Cookie", `Price $2`)
+message.channel.send(ping);
+  }
+});
+
+client.on("message", (message) => {
   if (message.content.startsWith("S_ban")) {
   let messageArray = message.content.split(" ");
   let cmd = messageArray[0];
