@@ -513,7 +513,7 @@ client.on("message", (message) => {
     .addField(":tv: TV", `Price: $300`)
     .setFooter("Shifter Online Shop", 'This command is currently in beta');
     
-message.channel.send(shop)
+message.channel.send(shop);
   }
 });
 
