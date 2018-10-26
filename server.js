@@ -495,14 +495,25 @@ client.on('message', (message) => {
 
 client.on("message", (message) => {
   if (message.content.startsWith("S_shop")) {
-    let ping = new Discord.RichEmbed()
+    let shop = new Discord.RichEmbed()
     .setDescription("Shifter Online Shop V1.0")
-    .setColor("#ffab43")
+    .setColor("0x00AE86")
     .addField(":gift: Gift", `Price: $15`) 
     .addField(":lock: Lock", `Price: $5`)
-    .addField(":tangerine: Tangerine", `Price $2`)
-    .addField(":cookie: Cookie", `Price $2`)
-message.channel.send(ping);
+    .addField(":tangerine: Tangerine", `Price: $2`)
+    .addField(":green_apple: Green apple", `Price: $2`)
+    .addField(":cookie: Cookie", `Price: $2`)
+    .addField(":doughnut: Doughnut", `Price: $2`) 
+    .addField(":tickets: Ticket", `Price $20`)
+    .addField(":iphone: iPhone", `Price: $750`)
+    .addField(":camera: Camera", `Price: $60`)
+    .addField(":hammer: Hammer", `Price: $25`)
+    .addField(":desktop: Computer", `Price: $500`)
+    .addField(":printer: Printer", `Price: $100`)
+    .addField(":tv: TV", `Price: $300`)
+    .setFooter("Shifter Online Shop, 'This command is currently in beta');
+    
+message.channel.send(shop);
   }
 });
 
