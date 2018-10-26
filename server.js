@@ -511,7 +511,7 @@ client.on("message", (message) => {
     .addField(":desktop: Computer", `Price: $500`)
     .addField(":printer: Printer", `Price: $100`)
     .addField(":tv: TV", `Price: $300`)
-    .setFooter("Shifter Online Shop", 'This command is currently in beta');
+    .addFooter("Shifter Online Shop", 'This command is currently in beta');
     
 message.channel.send(shop);
   }
