@@ -510,8 +510,7 @@ client.on("message", (message) => {
     .addField(":hammer: Hammer", `Price: $25`)
     .addField(":desktop: Computer", `Price: $500`)
     .addField(":printer: Printer", `Price: $100`)
-    .addField(":tv: TV", `Price: $300`)
-    .addFooter("Shifter Online Shop", 'This command is currently in beta');
+    .addField(":tv: TV", `Price: $300`);
     
 message.channel.send(shop);
   }
