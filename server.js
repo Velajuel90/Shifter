@@ -38,7 +38,7 @@ client.on("message", (message) => {
     .addField("Version", "1.2.1")
     .addField("Last update date", "January 13 2019")
     .addField("Created on", "Sunday, June 16 2018")
-    .addField("What is in this update?", "Added (dutch)memes, added the updatelog command to the help and updated the support command');
+    .addField("What is in this update?", "Added (dutch)memes, added the updatelog command to the help and updated the support command");
 
 message.channel.send(log);
   }
