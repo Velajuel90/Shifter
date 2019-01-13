@@ -31,6 +31,21 @@ message.channel.send(ping);
 });
 
 client.on("message", (message) => {
+  if (message.content.startsWith("S_updatelog")) {
+    let log = new Discord.RichEmbed()
+    .setDescription("Shifter Updatelog")
+    .setColor("#12b629")
+    .addField("Version", "1.2.1")
+    .addField("Last update date", "January 13 2019")
+    .addField("Created on", "Sunday, June 16 2018")
+    .addField("What is in this update?", "Added (dutch)memes, added the updatelog command to the help and updated the support command');
+
+message.channel.send(log);
+  }
+});
+
+
+client.on("message", (message) => {
   if (message.content.startsWith("goedemorgen")) {
     let ping = new Discord.RichEmbed()
     .setColor("#ffab43")
@@ -120,7 +135,7 @@ client.on("message", (message) => {
     .addField("Created on", "Sunday, June 16 2018")
     .addField("Servers running", `${client.guilds.size}`)
     .addField("Amount users", `${client.users.size}`)
-    .addField("Commands", "38");
+    .addField("Commands", "39");
 
 message.channel.send(about);
   }
@@ -459,6 +474,7 @@ client.on('message', (message) => {
   .addField("S_ban <@user> <reason>", 'Ban an user. Do not use the <>. Example: S_ban @user#0000 stupid')
   .addField("S_warn <@user> <reason>", 'Warn an user. Do not use the <>. Example: S_warn @user#0000 rude to people')
   .addField("S_updates", 'Check if Shifter has updates. The updates does he download automatically')
+  .addField("S_updatelog", 'Gives information about the latest update')
   .addField("Shifter Good Morning", 'Shifter says good morning to you when you type Goedemorgen, Morning, Good morning. It supports only Dutch and English now. Later more languages!')
 
     message.member.send(embed);
@@ -851,7 +867,7 @@ client.on('message', (message) => {
 	if (message.content.startsWith("S_support")) {
     let support = new Discord.RichEmbed()
     .setColor("#12b629")
-    .addField("Shifter Support", "https://discord.gg/6rzUtyf");
+    .addField("Shifter Support", "If you have any question or you have a problem you can join this server: https://discord.gg/6rzUtyf");
     
     message.channel.send(support);
 	}
@@ -2048,6 +2064,22 @@ var answers = [
   'https://cdn.discordapp.com/attachments/440234197093842985/490599468463423508/FB_IMG_1537038416527.jpg',
   'https://cdn.discordapp.com/attachments/440234197093842985/490567933941121024/FB_IMG_1537030891993.jpg',
   'https://cdn.discordapp.com/attachments/440234197093842985/490204995757539329/FB_IMG_1536944370699.jpg',
+  'https://cdn.discordapp.com/attachments/440234179440148481/533735969921302529/FB_IMG_1547322953683.jpg',
+  'https://cdn.discordapp.com/attachments/440234179440148481/531137207344300042/FB_IMG_1546703367896.jpg',
+  'https://cdn.discordapp.com/attachments/440234179440148481/530505456540450867/FB_IMG_1546552748801.jpg',
+  'https://cdn.discordapp.com/attachments/440234179440148481/530505455416639498/FB_IMG_1546552726524.jpg',
+  'https://cdn.discordapp.com/attachments/440234179440148481/530505454753677313/FB_IMG_1546552713003.jpg',
+  'https://cdn.discordapp.com/attachments/440234179440148481/530504847741681665/FB_IMG_1546552599730.jpg',
+  'https://cdn.discordapp.com/attachments/440234179440148481/529589476851187732/FB_IMG_1546334191099.jpg',
+  'https://media.discordapp.net/attachments/440234179440148481/528629478969180161/FB_IMG_1546105401070.jpg?width=276&height=466',
+  'https://media.discordapp.net/attachments/440234179440148481/528629479581417472/FB_IMG_1546105330563.jpg?width=296&height=473',
+  'https://media.discordapp.net/attachments/440234179440148481/528629479581417476/FB_IMG_1546105343901.jpg?width=277&height=473',
+  'https://media.discordapp.net/attachments/440234179440148481/528629480231796736/FB_IMG_1546105385765.jpg?width=255&height=474',
+  'https://media.discordapp.net/attachments/440234179440148481/528629531024556042/FB_IMG_1546105239514.jpg?width=494&height=473',
+  'https://media.discordapp.net/attachments/440234179440148481/528629531024556044/FB_IMG_1546105257436.jpg?width=396&height=473',
+  'https://media.discordapp.net/attachments/440234179440148481/528629531683323914/FB_IMG_1546105288211.jpg?width=310&height=473',
+  'https://media.discordapp.net/attachments/440234179440148481/528629532249423872/FB_IMG_1546105299846.jpg?width=367&height=473',
+  'https://media.discordapp.net/attachments/440234179440148481/528629563534606339/FB_IMG_1546105231904.jpg?width=385&height=473',
   
   
 ];
@@ -2161,7 +2193,38 @@ var answers = [
 'https://cdn.discordapp.com/attachments/477815608139055104/490177451721228288/XeHs95RDbvc.png',
 'https://cdn.discordapp.com/attachments/477815608139055104/482550482565595156/LOCATE_MEME.jpg',
 'https://cdn.discordapp.com/attachments/477815608139055104/481389301620539392/image.jpg',
-
+'https://cdn.discordapp.com/attachments/440234179440148481/529604946312560650/FB_IMG_1546338042427.jpg',
+'https://cdn.discordapp.com/attachments/440234179440148481/529590840646041601/FB_IMG_1546334672289.jpg',
+'https://i.redd.it/edwsac1czooz.jpg',
+'https://i.imgur.com/MPdd4yp.jpg',
+'https://i.imgur.com/oEq3HkD.jpg',
+'https://i.imgur.com/67PfwU9.png',
+'https://i.imgur.com/JxBSZXs.jpg',
+'https://i.imgur.com/CQhbtmZ.jpg',
+'https://i.imgur.com/eVE8lj3.jpg',
+'https://i.imgur.com/PbYMSh6.png',
+'https://i.imgur.com/YsyT6Eb.png',
+'http://quotesnhumor.com/wp-content/uploads/2016/12/25-Hilarious-Dank-Memes-5-Hilarious-Memes.jpg',
+'https://i.ytimg.com/vi/lHo-GhAr_g0/hqdefault.jpg',
+'https://pm1.narvii.com/6999/0ba809a9a5af3b126f822e247d5aeb4d1f3c5b80r1-884-1024v2_hq.jpg',
+'https://i.imgflip.com/1w35qg.jpg',
+'https://i.imgflip.com/1w35p0.jpg',
+'https://i.imgflip.com/1w35l3.jpg',
+'https://i.imgflip.com/1w356l.jpg',
+'https://i.imgflip.com/1w356b.jpg',
+'https://i.imgflip.com/1w352k.jpg',
+'https://i.imgflip.com/1w34yj.jpg',
+'https://i.imgflip.com/1w34ik.jpg',
+'https://i.imgflip.com/1w34i9.jpg',
+'https://i.imgflip.com/1w34ag.jpg',
+'https://i.imgflip.com/1w346f.jpg',
+'https://i.imgflip.com/1w33bo.jpg',
+'https://i.imgflip.com/1w338m.jpg',
+'https://i.imgflip.com/1w32yd.jpg',
+'https://i.imgflip.com/1w32tk.jpg',
+'https://i.imgflip.com/1w32nv.jpg',
+'https://i.imgflip.com/1w32ga.jpg',
+	
   
 ]
 
