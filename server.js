@@ -846,9 +846,6 @@ message.channel.send(`${pat1}`);
 
 client.on('message', (message) => {
   if (message.content.startsWith("S_digit")) {
-    let messageArray = message.content.split(" ");
-  let args = messageArray.slice(1);
-  
   var answers = [ 
 	 '1.0. That hurts I think :worried:',
 	 '1.1. That hurts I think :worried:',
@@ -944,6 +941,9 @@ let number = answers[Math.floor(Math.random() * answers.length)];
 let diceroll = new Discord.RichEmbed()
     .setColor("#15f153")
     .addField("Shifter Digit", `I give you as digit ${number}`);
+	  
+message.channel.send(diceroll);
+	  
   }
 });
 
