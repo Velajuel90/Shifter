@@ -7,14 +7,15 @@ express(args);
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.username}!`);
-      client.user.setActivity(`S_help | ${client.guilds.size} servers | v1.2.1`);
+      client.user.setActivity(`S_help | ${client.guilds.size} servers | v1.3`);
 });
 	
 client.on("message", (message) => {
   if (message.content.startsWith("S_ping")) {
     let ping = new Discord.RichEmbed()
     .setColor("#2441e2")
-    .addField("Shifter Ping", "Pong!");
+    .addField("Shifter Ping", "Pong!")
+    .addField("Response time", new Date().getTime() - message.createdTimestamp + " ms");
 
 message.channel.send(ping);
   }
@@ -35,8 +36,8 @@ client.on("message", (message) => {
     let log = new Discord.RichEmbed()
     .setDescription("Shifter Updatelog")
     .setColor("#12b629")
-    .addField("Version", "1.2.1")
-    .addField("Last update date", "January 13 2019")
+    .addField("Version", "1.3")
+    .addField("Last update date", "April 4 2019")
     .addField("Created on", "Sunday, June 16 2018")
     .addField("What is in this update?", "Added (dutch)memes, added the updatelog command to the help and updated the support command");
 
@@ -157,7 +158,7 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Shifter Purge", ":wastebasket: I have deleted the last 1 message");
+    .addField("Shifter Purge", ":wastebasket: I deleted the last 1 message");
     
     message.channel.send(purge2);
 	}
@@ -181,7 +182,7 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Shifter Purge", ":wastebasket: I have deleted the last 3 messages.");
+    .addField("Shifter Purge", ":wastebasket: I deleted the last 3 messages.");
     
     message.channel.send(purge2);
 	}
@@ -193,7 +194,7 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Shifter Purge", ":wastebasket: I have deleted the last 4 messages.");
+    .addField("Shifter Purge", ":wastebasket: I deleted the last 4 messages.");
     
     message.channel.send(purge2);
 	}
@@ -205,7 +206,7 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
    .setColor("#000000")
-    .addField("Shifter Purge", ":wastebasket: I have deleted the last 5 messages.");
+    .addField("Shifter Purge", ":wastebasket: I deleted the last 5 messages.");
     
     message.channel.send(purge2);
 	}
@@ -217,7 +218,7 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Shifter Purge", ":wastebasket: I have deleted the last 6 messages.");
+    .addField("Shifter Purge", ":wastebasket: I deleted the last 6 messages.");
     
     message.channel.send(purge2);
 	}
@@ -229,7 +230,7 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Shifter Purge", ":wastebasket: I have deleted the last 7 messages.");
+    .addField("Shifter Purge", ":wastebasket: I deleted the last 7 messages.");
     
     message.channel.send(purge2);
 	}
@@ -241,7 +242,7 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
   .setColor("000000")
-    .addField("Shifter Purge", ":wastebasket: I have deleted the last 8 messages.");
+    .addField("Shifter Purge", ":wastebasket: I deleted the last 8 messages.");
     
     message.channel.send(purge2);
 	}
@@ -253,7 +254,7 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Shifter Purge", ":wastebasket: I have deleted the last 9 messages.");
+    .addField("Shifter Purge", ":wastebasket: I deleted the last 9 messages.");
     
     message.channel.send(purge2);
 	}
@@ -265,7 +266,7 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
  .setColor("#000000")
-    .addField("Shifter Purge", ":wastebasket: I have deleted the last 10 messages.");
+    .addField("Shifter Purge", ":wastebasket: I deleted the last 10 messages.");
     
     message.channel.send(purge2);
 	}
@@ -277,7 +278,7 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
  .setColor("#000000")
-    .addField("Shifter Purge", ":wastebasket: I have deleted the last 11 messages.");
+    .addField("Shifter Purge", ":wastebasket: I deleted the last 11 messages.");
     
     message.channel.send(purge2);
 	}
@@ -289,7 +290,7 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
  .setColor("#000000")
-    .addField("Shifter Purge", ":wastebasket: I have deleted the last 12 messages.");
+    .addField("Shifter Purge", ":wastebasket: I deleted the last 12 messages.");
     
     message.channel.send(purge2);
 	}
@@ -301,7 +302,7 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
  .setColor("#000000")
-    .addField("Shifter Purge", ":wastebasket: I have deleted the last 13 messages.");
+    .addField("Shifter Purge", ":wastebasket: I deleted the last 13 messages.");
     
     message.channel.send(purge2);
 	}
@@ -313,7 +314,7 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
  .setColor("#000000")
-    .addField("Shifter Purge", ":wastebasket: I have deleted the last 14 messages.");
+    .addField("Shifter Purge", ":wastebasket: I deleted the last 14 messages.");
     
     message.channel.send(purge2);
 	}
@@ -325,7 +326,7 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
  .setColor("#000000")
-    .addField("Shifter Purge", ":wastebasket: I have deleted the last 15 messages.");
+    .addField("Shifter Purge", ":wastebasket: I deleted the last 15 messages.");
     
     message.channel.send(purge2);
 	}
@@ -337,7 +338,7 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
  .setColor("#000000")
-    .addField("Shifter Purge", ":wastebasket: I have deleted the last 16 messages.");
+    .addField("Shifter Purge", ":wastebasket: I deleted the last 16 messages.");
     
     message.channel.send(purge2);
 	}
@@ -349,7 +350,7 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
  .setColor("#000000")
-    .addField("Shifter Purge", ":wastebasket: I have deleted the last 17 messages.");
+    .addField("Shifter Purge", ":wastebasket: I deleted the last 17 messages.");
     
     message.channel.send(purge2);
 	}
@@ -361,7 +362,7 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
  .setColor("#000000")
-    .addField("Shifter Purge", ":wastebasket: I have deleted the last 18 messages.");
+    .addField("Shifter Purge", ":wastebasket: I deleted the last 18 messages.");
     
     message.channel.send(purge2);
 	}
@@ -373,7 +374,7 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
  .setColor("#000000")
-    .addField("Shifter Purge", ":wastebasket: I have deleted the last 19 messages.");
+    .addField("Shifter Purge", ":wastebasket: I deleted the last 19 messages.");
     
     message.channel.send(purge2);
 	}
@@ -385,7 +386,7 @@ client.on("message", (message) => {
 		message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
     let purge2 = new Discord.RichEmbed()
  .setColor("#000000")
-    .addField("Shifter Purge", ":wastebasket: I have deleted the last 20 messages.");
+    .addField("Shifter Purge", ":wastebasket: I deleted the last 20 messages.");
     
     message.channel.send(purge2);
 	}
@@ -503,7 +504,8 @@ client.on('message', (message) => {
   .addField("S_lesbian", 'Test how much lesbian you are')
   .addField("S_shoot @<user>", 'Shoot to someone. Do not use the <>. Example: S_shoot @user#0000')
   .addField("S_kill @<user>", 'Kill someone. Do not use the <>. Example: S_kill @user#0000')
-  .addField("S_uq", 'Get a useless question from Shifter');
+  .addField("S_uq", 'Get a useless question from Shifter')
+  .addField("S_digit", 'Get a digit from Shifter. Hopefully a good one!');
     
   message.member.send(fun)
   }
@@ -839,6 +841,109 @@ client.on('message', (message) => {
 let pat1 = answers[Math.floor(Math.random() * answers.length)];
 message.channel.send(`**${message.author} pats ${kUser}**`);
 message.channel.send(`${pat1}`);
+  }
+});
+
+client.on('message', (message) => {
+  if (message.content.startsWith("S_digit")) {
+    let messageArray = message.content.split(" ");
+  let args = messageArray.slice(1);
+  
+  var answers = [ 
+	 '1.0. That hurts I think :worried:',
+	 '1.1. That hurts I think :worried:',
+	 '1.2. That hurts I think :worried:',
+	 '1.3. That hurts I think :worried:',
+	 '1.4. That hurts I think :worried:', 
+	 '1.5. That hurts I think :worried:',
+	 '1.6. That hurts I think :worried:',
+	 '1.7. That hurts I think :worried:',
+	 '1.8. That hurts I think :worried:',
+	 '1.9. That hurts I think :worried:',
+	 '2.0. That hurts I think :worried:',
+	 '2.1. That hurts I think :worried:',
+	 '2.2. That hurts I think :worried:',
+	 '2.3. That hurts I think :worried:',
+	 '2.4. That hurts I think :worried:',
+	 '2.5. That is very low :frowning:',
+	 '2.6. That is very low :frowning:',
+	 '2.7. That is very low :frowning:',
+	 '2.8. That is very low :frowning:',
+	 '2.9. That is very low :frowning:',
+	 '3.0. That is very low :frowning:',
+	 '3.1. That is very low :frowning:',
+	 '3.2. That is very low :frowning:',
+	 '3.3. That is very low :frowning:',
+	 '3.4. That is very low :frowning:',
+	 '3.5. That is very low :frowning:',
+	 '3.6. That is very low :frowning:',
+	 '3.7. That is very low :frowning:',
+	 '3.8. That is very low :frowning:',
+	 '3.9. That is very low :frowning:',
+	 '4.0. This is not that kind high, but it could be worse am I right? :thinking:',
+	 '4.1. This is not that kind high, but it could be worse am I right? :thinking:',
+	 '4.2. This is not that kind high, but it could be worse am I right? :thinking:',
+	 '4.3. This is not that kind high, but it could be worse am I right? :thinking:',
+	 '4.4. This is not that kind high, but it could be worse am I right? :thinking:',
+	 '4.5. This is not that kind high, but it could be worse am I right? :thinking:',
+	 '4.6. This is not that kind high, but it could be worse am I right? :thinking:',
+	 '4.7. This is not that kind high, but it could be worse am I right? :thinking:',
+	 '4.8. This is not that kind high, but it could be worse am I right? :thinking:',
+	 '4.9. This is not that kind high, but it could be worse am I right? :thinking:',
+	 '5.0. You are almost there! Do not give up! :wink:',
+	 '5.1. You are almost there! Do not give up! :wink:',
+	 '5.2. You are almost there! Do not give up! :wink:',
+	 '5.3. You are almost there! Do not give up! :wink:',
+	 '5.4. You are almost there! Do not give up! :wink:',
+	 '5.5. It is risky but at leat it is sufficient :no_mouth:',
+	 '5.6. It is risky but at leat it is sufficient :no_mouth:',
+	 '5.7. It is risky but at leat it is sufficient :no_mouth:',
+	 '5.8. It is risky but at leat it is sufficient :no_mouth:',
+	 '5.9. It is risky but at leat it is sufficient :no_mouth:',
+	 '6.0. It is a suffiecient, try to get higher! :flushed:',
+	 '6.1. It is a suffiecient, try to get higher! :flushed:',
+	 '6.5. It is a suffiecient, try to get higher! :flushed:',
+	 '6.6. It is a suffiecient, try to get higher! :flushed:',
+	 '6.7. It is a suffiecient, try to get higher! :flushed:',
+	 '6.8. It is a suffiecient, try to get higher! :flushed:',
+	 '6.9. It is a suffiecient, try to get higher! :flushed:',
+	 '7.0. You are on the way! :slight_smile:',
+	 '7.1. You are on the way! :slight_smile:',
+	 '7.2. You are on the way! :slight_smile:',
+	 '7.3. You are on the way! :slight_smile:',
+	 '7.4. You are on the way! :slight_smile:',
+	 '7.5. You are on the way! :slight_smile:',
+	 '7.6. You are on the way! :slight_smile:',
+	 '7.7. You are on the way! :slight_smile:',
+	 '7.8. You are on the way! :slight_smile:',
+	 '7.9. You are on the way! :slight_smile:',
+	 '8.0. Good job! Well done! :grin:',
+	 '8.1. Good job! Well done! :grin:',
+	 '8.2. Good job! Well done! :grin:',
+	 '8.3. Good job! Well done! :grin:',
+	 '8.4. Good job! Well done! :grin:',
+	 '8.5. Good job! Well done! :grin:',
+	 '8.6. Good job! Well done! :grin:',
+	 '8.7. Good job! Well done! :grin:',
+	 '8.8. Good job! Well done! :grin:',
+	 '8.9. Good job! Well done! :grin:',
+	 '9.0. Great job! Almost a 10! :grinning:',
+	 '9.1. Great job! Almost a 10! :grinning:',
+	 '9.2. Great job! Almost a 10! :grinning:',
+	 '9.3. Great job! Almost a 10! :grinning:',
+	 '9.4. Great job! Almost a 10! :grinning:',
+	 '9.5. Great job! Almost a 10! :grinning:',
+	 '9.6. Great job! Almost a 10! :grinning:',
+	 '9.7. Great job! Almost a 10! :grinning:',
+	 '9.8. Great job! Almost a 10! :grinning:',
+	 '9.9. Great job! Almost a 10! :grinning:',
+	 '10.0. You got a 10! You are the perfect one! Who also got a 10? :relaxed:',
+  ];
+	  
+let number = answers[Math.floor(Math.random() * answers.length)];
+let diceroll = new Discord.RichEmbed()
+    .setColor("#15f153")
+    .addField("Shifter Digit", `I give you as digit ${number}`);
   }
 });
 
