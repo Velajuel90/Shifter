@@ -1,6 +1,5 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-module.exports = (args) => {
 
 
 client.on('ready', () => {
@@ -2495,7 +2494,7 @@ message.channel.send(`${pingedme}`);
 }
 
 });
-client.login(process.env.BOT_TOKEN)
+client.login(process.env.BOT_TOKEN);
 
 
   
